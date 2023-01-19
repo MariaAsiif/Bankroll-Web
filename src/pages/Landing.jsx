@@ -13,7 +13,7 @@ const Landing = () => {
         <GetReward />
       </div>
       <Control />
-      <Transfer/>
+      <Transfer />
     </Layout>
   )
 }
