@@ -10,7 +10,7 @@ module.exports = {
 
       },
       backgroundImage: {
-        'control-img': " url(./assets/images/Bg_3.png)",
+        'control-img': " url(./assests/images/Bg_3.png)",
 
       }
     },

@@ -4,12 +4,12 @@ import Footer from '../Footer.jsx/Footer'
 
 const Layout = ({ children }) => {
     return (
-        <div className='relative' >
+        <div>
             <Header />
             {
                 children
             }
-            <div className='fixed bottom-0'>
+            <div className=''>
                 <Footer />
             </div>
         </div>

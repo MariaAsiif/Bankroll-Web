@@ -7,9 +7,11 @@ import Control from '../components/LandingComp/Control'
 const Landing = () => {
   return (
     <Layout>
-      <SayGoodby/>
-      <GetReward/>
-      <Control/>
+      <div className='relative'>
+        <SayGoodby />
+        <GetReward />
+      </div>
+      <Control />
     </Layout>
   )
 }
