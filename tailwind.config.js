@@ -9,6 +9,10 @@ module.exports = {
         roboto: ["Roboto", "sans-serif"]
 
       },
+      backgroundImage: {
+        'control-img': " url(./assets/images/Bg_3.png)",
+
+      }
     },
   },
   plugins: [],
