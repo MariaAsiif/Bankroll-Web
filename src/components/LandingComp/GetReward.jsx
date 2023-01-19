@@ -11,7 +11,7 @@ const GetReward = () => {
             <div className=' absolute -bottom-[50px] w-full pb-7'>
                 <div className='mx-20 '>
                     <div className='rounded-tl-xl rounded-tr-xl  bg-white h-[150px] w-full pt-3'>
-                        <div className='flex pt-[3rem] pb-8  justify-between px-[5rem] border-b'>
+                        <div className='flex pt-[3rem] pb-8  justify-between px-[5rem] border-b shadow-md'>
                             <div className='flex items-center w-full '>
                                 <img src={reward} alt="reword" />
                                 <h2  className='px-4 font-bold font-roboto text-[#060C3A] text-[2rem]'>Sign up and Get Reward</h2>
@@ -36,7 +36,7 @@ const GetReward = () => {
                             <div className=''>
 
                                 <div className='flex items-center justify-center'>
-                                    <img className='mt-6' src={f1} alt="icon_image" />
+                                    <img className='mt-6' src={f2} alt="icon_image" />
                                     <img className='mt-[6rem]' src={path2} alt="icon_image" />
                                 </div>
 
@@ -44,7 +44,7 @@ const GetReward = () => {
                             <div className=''>
 
                                 <div className='flex items-center '>
-                                    <img className='mt-6' src={f1} alt="icon_image" />
+                                    <img className='mt-6' src={f3} alt="icon_image" />
                                 </div>
 
                             </div>
