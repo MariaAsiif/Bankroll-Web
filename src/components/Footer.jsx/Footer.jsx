@@ -15,7 +15,7 @@ const Footer = () => {
                   Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                 </p>
               </div>
-              <div className='pt-6'>
+              <div className='pt-6 pl-[3rem] w-full'>
                 <h2 className='
               font-semibold  text-[16px] text-[#060C3A] 
                '>Offices</h2>
@@ -23,7 +23,7 @@ const Footer = () => {
                   Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                 </p>
               </div>
-              <div className='pt-6'>
+              <div className='pt-6 pl-[7rem]'>
                 <h2 className='
               font-semibold  text-[16px] text-[#060C3A] 
                '>Links</h2>
@@ -35,7 +35,7 @@ const Footer = () => {
                 </ul>
 
               </div>
-              <div className='pt-6'>
+              <div className='pt-6 pl-[5rem]'>
                 <h2 className='
               font-semibold  text-[16px] text-[#060C3A] 
                '>Follow Us</h2>
@@ -57,8 +57,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className=' mx-20 w-[86%] absolute top-0'>
-          <div className=' bg-white shadow-md border border-gray-50 rounded-[40px] p-8 pt-[4rem] h-[200px]'>
+        <div className=' mx-20 w-[86%] absolute top-0 '>
+          <div className=' bg-white shadow-2xl border border-gray-50 rounded-[40px] p-8 pt-[4rem] h-[200px]' >
             <div className='flex justify-between px-7 items-center'>
                 <h2 className='text-[#060C3A] text-[40px]'>
                 Ready to join?

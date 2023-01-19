@@ -12,6 +12,7 @@ module.exports = {
       backgroundImage: {
         'control-img': " url(./assests/images/Bg_3.png)",
         'transfer-img': " url(./assests/images/Bg.png)",
+        'Oval-img': " url(./assests/images/Oval.png)",
 
       }
     },

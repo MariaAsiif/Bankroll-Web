@@ -8,10 +8,10 @@ import path2 from '../../assests/images/Path2.png'
 const GetReward = () => {
     return (
         <>
-            <div className=' absolute -bottom-[50px] w-full pb-7'>
+            <div className=' absolute -bottom-[80px] w-full pb-7'>
                 <div className='mx-20 '>
-                    <div className='rounded-tl-xl rounded-tr-xl  bg-white h-[150px] w-full pt-3'>
-                        <div className='flex pt-[3rem] pb-8  justify-between px-[5rem] border-b shadow-md'>
+                    <div className='rounded-tl-2xl rounded-tr-2xl  bg-white h-[150px] w-full pt-3'>
+                        <div className='flex pb-[4rem] pt-[1rem]  justify-between px-[5rem] border-b shadow-md'>
                             <div className='flex items-center w-full '>
                                 <img src={reward} alt="reword" />
                                 <h2  className='px-4 font-bold font-roboto text-[#060C3A] text-[2rem]'>Sign up and Get Reward</h2>

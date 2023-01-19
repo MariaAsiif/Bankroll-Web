@@ -20,7 +20,7 @@ const Control = () => {
 
             </p>
 
-            <button className='rounded-full mt-[3rem] text-white font-roboto px-8 py-3 bg-gradient-to-r from-[#4965E0] to-[#896CDD]'>Get Started</button>
+            <button className='rounded-full mt-[3rem]  text-white font-roboto px-8 py-3 bg-gradient-to-r from-[#4965E0] to-[#896CDD]'>Get Started</button>
 
 
           </div>
