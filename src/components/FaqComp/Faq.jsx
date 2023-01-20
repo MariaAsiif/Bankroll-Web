@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Faq = () => {
+const Query = () => {
     const [active, setActive] = useState(0)
     const lists = ["Does the card work for international purchases?", "Do you offer a payment gateway?", "Do you provide virtual cards?"]
     return (
@@ -48,4 +48,4 @@ const Faq = () => {
     )
 }
 
-export default Faq
+export default Query
