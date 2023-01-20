@@ -4,7 +4,7 @@ import { BsSearch } from 'react-icons/bs'
 const Banner = () => {
     return (
         <>
-            <div className='bg-feature-img bg-cover h-[430px]'>
+            <div className='bg-faq-img bg-cover h-[430px]'>
                 <div className='text-center pt-[8.5rem]'>
                     <h2 className='text-[38px] text-white font-roboto font-medium'>How can we help?</h2>
                     <div className='max-w-[500px]  m-auto'>

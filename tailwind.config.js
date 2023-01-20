@@ -13,7 +13,9 @@ module.exports = {
         'control-img': " url(./assests/images/Bg_3.png)",
         'transfer-img': " url(./assests/images/Bg.png)",
         'Oval-img': " url(./assests/images/Oval.png)",
-        'feature-img': " url(./assests/images/Hero.png)",
+        'faq-img': " url(./assests/images/Hero.png)",
+        'feature-img': " url(./assests/images/feature.png)",
+        'featureMobile-img': " url(./assests/images/featureOvel.png)",
 
       }
     },

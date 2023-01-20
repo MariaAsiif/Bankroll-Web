@@ -30,20 +30,20 @@ const SayGoodby = () => {
                     </div>
                     <div className='w-full bg-Oval-img bg-no-repeat bg-contain relative'>
                         <img src={right} className='w-[90%]' alt="mobile" />
-                        <div className='absolute top-[35%] -left-6'>
-                            <img src={f1} className='bg-white w-[90%]' alt="left_gif" />
+                        <div className='absolute top-[38%] -left-6'>
+                            <img src={f2} className='bg-white w-[12%] rounded-full' alt="left_gif" />
                         </div>
-                        <div className='absolute top-5 left-[13%]'>
-                            <img src={f2} className='bg-white w-[90%]' alt="left_gif" />
+                        <div className='absolute top-8 left-[13%]'>
+                            <img src={f1} className='bg-white w-[12%] rounded-full' alt="left_gif" />
                         </div>
                         <div className='absolute top-1 right-[20%]'>
-                            <img src={f3} className='bg-white w-[90%]' alt="left_gif" />
+                            <img src={f3} className='bg-white w-[70%] rounded-full h-[60px] object-contain' alt="left_gif" />
                         </div>
-                        <div className='absolute top-[30%] -right-8'>
-                            <img src={f4} className='bg-white w-[90%]' alt="left_gif" />
+                        <div className='absolute top-[30%] left-[90%]'>
+                            <img src={f4} className='bg-white w-full object-contain rounded-full' alt="left_gif" />
                         </div>
-                        <div className='absolute top-[70%] right-[5%]'>
-                            <img src={f5} className='bg-white w-[90%]' alt="left_gif" />
+                        <div className='absolute top-[70%] left-[80%]'>
+                            <img src={f5} className='bg-white w-[55%] object-contain rounded-full' alt="left_gif" />
                         </div>
                     </div>
                 </div>
