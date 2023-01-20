@@ -1,9 +1,11 @@
 import React from 'react'
 import logo from '../../assests/images/Logo.png'
+import { useLocation } from 'react-router-dom'
 const Header = () => {
+    const location = useLocation().pathname
     return (
         <>
-            <div className='bg-gradient-to-r from-[#DBE7FA] to-[#F2F6FD]'>
+            <div className={`${location === "/" ?  'bg-gradient-to-r from-[#DBE7FA] to-[#F2F6FD]' : 'bg-white border-b'}`}>
                 <div className="mx-20  ">
                     <div className='flex justify-between items-center px-3 py-2'>
                         <div>

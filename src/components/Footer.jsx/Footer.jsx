@@ -8,14 +8,14 @@ const Footer = () => {
       <div className=' border border-white relative mt-[12rem]'>
         <div className='bg-gradient-to-r mt-[5rem]  from-[#DBE7FA] to-[#F2F6FD] h-[380px] '>
           <div className='mx-20'>
-            <div className='grid grid-cols-4 gap-10 pt-[10rem]'>
+            <div className='grid grid-cols-4  pt-[10rem]'>
               <div>
                 <img src={logo2} alt="logo2" />
                 <p className='leading-6 mt-3 text-[14px] text-[#8C8E9E]'>
                   Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                 </p>
               </div>
-              <div className='pt-6 pl-[3rem] w-full'>
+              <div className='pt-6 pl-[5rem] w-full'>
                 <h2 className='
               font-semibold  text-[16px] text-[#060C3A] 
                '>Offices</h2>
@@ -64,7 +64,7 @@ const Footer = () => {
                 Ready to join?
                 <span className='text-[#896CDD] font-bold px-2'>Signup today</span>
               </h2>
-              <button className='rounded-full text-white font-roboto px-8 py-3 bg-gradient-to-r from-[#4965E0] to-[#896CDD]'>SignUp now</button>
+              <button className='rounded-full  text-white font-roboto px-8 py-3 hover:bg-white  hover:border-[#896CDD] border-[#896CDD] border-2 bg-[#896CDD] hover:text-[#896CDD]'>SignUp now</button>
             </div>
           </div>
         </div>

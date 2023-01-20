@@ -24,7 +24,7 @@ const SayGoodby = () => {
 
                         </p>
 
-                        <button className='rounded-full mt-[3rem] text-white font-roboto px-8 py-3 bg-gradient-to-r from-[#4965E0] to-[#896CDD]'>Get Started</button>
+                        <button className='rounded-full mt-[3rem] text-white font-roboto px-8 py-3 hover:bg-white  hover:border-[#896CDD] border-2 bg-[#896CDD] hover:text-[#896CDD]'>Get Started</button>
 
 
                     </div>
