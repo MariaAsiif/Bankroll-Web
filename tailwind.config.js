@@ -16,6 +16,7 @@ module.exports = {
         'faq-img': " url(./assests/images/Hero.png)",
         'feature-img': " url(./assests/images/feature.png)",
         'featureMobile-img': " url(./assests/images/featureOvel.png)",
+        'contact-img': " url(./assests/images/contact.png)",
 
       }
     },
