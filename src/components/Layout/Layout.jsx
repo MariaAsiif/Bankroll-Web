@@ -6,11 +6,11 @@ const Layout = ({ children }) => {
     return (
         <div>
             <Header />
-            {
+            {/* {
                 children
-            }
+            } */}
             <div>
-                <Footer />
+                {/* <Footer /> */}
             </div>
         </div>
     )
