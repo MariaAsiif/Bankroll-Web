@@ -12,16 +12,16 @@ import or from '../../assests/images/or.png'
 const ContactForm = () => {
     return (
         <>
-            <div className='mx-20 '>
+            <div className='lg:mx-20 mx-5 '>
                 <div className=' relative mt-5'>
-                    <div className=' shadow-md border border-gray-100  ml-[10rem] h-[600px] '>
-                        <div className='pl-[20rem] pt-[2rem]'>
+                    <div className=' shadow-md border border-gray-100  lg:ml-[10rem] lg:h-[650px] h-full pb-3 '>
+                        <div className='lg:pl-[20rem] pl-5 lg:pt-[2rem] lg:mt-0  mt-[40rem] md:pl-[8rem] md:pt-2'>
                             <h2 className='text-[32px] font-normal font-roboto'>
                                 Send us a
                                 <br />
                                 <span className='text-black font-medium  '>Message</span>
                             </h2>
-                            <div className='grid grid-cols-2 gap-10 w-full pr-10 pt-[3rem]'>
+                            <div className='grid lg:grid-cols-2 gap-10 w-full pr-10 pt-[3rem]'>
                                 <div className='border-b w-full flex flex-col'>
                                     <label className='text-[#828282]'>First Name</label>
                                     <input className='outline-none' type="text" placeholder='John' />
@@ -31,7 +31,7 @@ const ContactForm = () => {
                                     <input className='outline-none' type="text" placeholder='John' />
                                 </div>
                             </div>
-                            <div className='grid grid-cols-2 gap-10 w-full pr-10 pt-[4rem]'>
+                            <div className='grid g:grid-cols-2 gap-10 w-full pr-10 pt-[4rem]'>
                                 <div className='border-b w-full flex flex-col'>
                                     <label className='text-[#828282]'>Email Address</label>
                                     <input className='outline-none' type="email" placeholder='John@gmail.com' />
@@ -53,8 +53,8 @@ const ContactForm = () => {
                         </div>
                     </div>
                     <div className='absolute top-0 left-0 '>
-                        <img src={Contact} className='object-cover w-full h-[600px] ' alt="left_imge" />
-                        <div className=' absolute top-[15%] left-[15%]'>
+                        <img src={Contact} className='object-cover lg:w-[100%] md:w-[800px] w-full h-[600px] ' alt="left_imge" />
+                        <div className=' absolute top-[15%] lg:left-[15%] md:left-[15%] left-5'>
                             <h2 className='text-[32px] font-normal font-roboto'>
                                 Contact
                                 <br />
@@ -83,8 +83,8 @@ const ContactForm = () => {
                                 <img className='object-cover ' src={yout} alt="youtube" />
                             </div>
                         </div>
-                        <div className='absolute top-[40%] -right-[8.5%]'>
-                            <img src={or} className='object-cover' alt="or" />
+                        <div className='absolute lg:top-[40%] md:left-[40%] md:-bottom-8 -bottom-2 lg:left-[85%]'>
+                            <img src={or} className='object-cover w-[50%] lg:w-full md:w-full' alt="or" />
 
                         </div>
                     </div>
