@@ -38,12 +38,12 @@ const Header = () => {
             <div className=''>
                 <Sidebar sidebarOpen={sideNavShow} setSidebarOpen={setSideNavShow} />
                 <div className={`${location === "/" && auto === false ? 'bg-gradient-to-r w-full from-[#DBE7FA] to-[#F2F6FD] ' : 'bg-white border-b  fixed top-0 w-full z-40 '}`}>
-                    <div className="lg:mx-20 mx-0 ">
+                    <div className="lg:mx-20 mx-0 md:mx-3">
                         <div className='flex justify-between items-center px-3 py-2 '>
                             <div className='lg:hidden block w-[80%]'>
                                 <FaBars className='text-[25px]' onClick={() => setSideNavShow(true)}/>
                             </div>
-                            <div className='w-full '>
+                            <div className=' '>
                                 <img src={logo} alt="logo" className='object-cover lg:w-full ' />
                             </div>
                             <div className='lg:block hidden'>
@@ -58,7 +58,7 @@ const Header = () => {
                                         <Link to="/contactUs">Contact Us</Link></li>
                                 </ul>
                             </div>
-                            <div className='w-full flex justify-end'>
+                            <div className='lg:w-auto  w-full flex justify-end'>
                                 <button className='rounded-full text-white font-roboto lg:px-6  px-3 py-2 lg:text-[16px] text-[10px] bg-gradient-to-r from-[#4965E0] to-[#896CDD]'>Download</button>
                             </div>
                         </div>

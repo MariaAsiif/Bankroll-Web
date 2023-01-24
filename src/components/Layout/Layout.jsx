@@ -6,12 +6,10 @@ const Layout = ({ children }) => {
     return (
         <div>
             <Header />
-            {/* {
+            {
                 children
-            } */}
-            <div>
-                {/* <Footer /> */}
-            </div>
+            }
+                <Footer />
         </div>
     )
 }

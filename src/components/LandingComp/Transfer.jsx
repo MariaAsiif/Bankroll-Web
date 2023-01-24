@@ -6,10 +6,10 @@ const Transfer = () => {
     return (
         <>
             <div>
-                <div className='bg-transfer-img bg-contain bg-no-repeat h-[900px] '>
-                    <div className='flex justify-between items-center mx-20'>
-                        <div className='w-full px-3'>
-                            <h2 className='text-[#060C3A] pt-7 leading-[50px] font-bold font-roboto text-[40px] w-full'>
+                <div className='bg-transfer-img lg:bg-contain md:bg-contain bg-cover bg-no-repeat lg:h-[900px]  h-full '>
+                    <div className='flex lg:flex-row  md:flex-row flex-col lg:justify-between items-center lg:mx-20 mx-5'>
+                        <div className='w-full px-3 lg:order-0 md:order-0 order-1'>
+                            <h2 className='text-[#060C3A] pt-7 lg:leading-[50px] font-bold font-roboto text-[20px] lg:text-[40px] w-full'>
                                 Accept international transfers
                                 from 45 countries around the world
                             </h2>
@@ -24,12 +24,12 @@ const Transfer = () => {
 
 
                         </div>
-                        <div className='w-full h-full'>
-                            <img src={transfer}  className='w-full h-[730px] object-cover' alt="control" />
+                        <div className='w-full h-full lg:order-1 md:order-1 order-0 '>
+                            <img src={transfer}  className='w-full lg:h-[730px] h-[400px] object-cover' alt="control" />
 
                         </div>
                     </div>
-                    <div className='mx-[8rem] mt-8'>
+                    <div className='lg:mx-[8rem] md:mx-[4rem] mt-8'>
                         <img src={social} alt="social" />
 
                     </div>
