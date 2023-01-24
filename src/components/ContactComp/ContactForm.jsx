@@ -47,13 +47,13 @@ const ContactForm = () => {
                                     <input className='outline-none' type="text" placeholder='What is it?' />
                                 </div>
                             </div>
-                            <div className='pt-[3rem]'>
+                            <div className='pt-[2rem]'>
                                 <button className='border w-[40%] py-2 text-white font-roboto  rounded-md bg-gradient-to-r from-[#4965E0] to-[#896CDD] '>Send Message</button>
                             </div>
                         </div>
                     </div>
                     <div className='absolute top-0 left-0 '>
-                        <img src={Contact} className='object-cover lg:w-[100%] md:w-[800px] w-full h-[600px] ' alt="left_imge" />
+                        <img src={Contact} className='object-cover lg:w-[100%] md:w-[800px] w-full h-[650px] ' alt="left_imge" />
                         <div className=' absolute top-[15%] lg:left-[15%] md:left-[15%] left-5'>
                             <h2 className='text-[32px] font-normal font-roboto'>
                                 Contact
