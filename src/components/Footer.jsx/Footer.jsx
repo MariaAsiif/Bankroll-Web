@@ -2,7 +2,7 @@ import React from 'react'
 import logo2 from '../../assests/images/Logo_2.png'
 import { BsInstagram, BsYoutube } from 'react-icons/bs'
 import { AiFillFacebook, AiFillLinkedin } from 'react-icons/ai'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 const Footer = () => {
   const location = useLocation().pathname
 
@@ -31,10 +31,10 @@ const Footer = () => {
               font-semibold  text-[16px] text-[#060C3A] 
                '>Links</h2>
                 <ul className='  text-[#8C8E9E]'>
-                  <li className='pt-2'>Contact Us</li>
-                  <li className='pt-2'>FAQ</li>
-                  <li className='pt-2'>Privacy</li>
-                  <li className='pt-2'>Terms & Conditions</li>
+                  <li className='pt-2'><Link to="/">Home</Link></li>
+                  <li className='pt-2'><Link to="/feature">Feature</Link></li>
+                  <li className='pt-2'><Link to="/faq">FAQ</Link></li>
+                  <li className='pt-2'><Link to="/contactus">Contact Us</Link></li>
                 </ul>
 
               </div>
