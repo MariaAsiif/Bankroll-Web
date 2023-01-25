@@ -12,7 +12,7 @@ import or from '../../assests/images/or.png'
 const ContactForm = () => {
     return (
         <>
-            <div className='lg:mx-20 mx-5 '>
+            <div className='lg:mx-20 mx-5 mb-[4rem]'>
                 <div className=' relative mt-5'>
                     <div className=' shadow-md border border-gray-100  lg:ml-[10rem] lg:h-[650px] h-full pb-3 '>
                         <div className='lg:pl-[20rem] pl-5 lg:pt-[2rem] lg:mt-0  mt-[40rem] md:pl-[8rem] md:pt-2'>
