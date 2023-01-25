@@ -6,7 +6,7 @@ const Query = () => {
     const lists = ["Does the card work for international purchases?", "Do you offer a payment gateway?", "Do you provide virtual cards?"]
     return (
         <>
-            <div className='max-w-[700px] lg:m-auto mx-5 !mt-[7rem] mb-[3rem] '>
+            <div className='max-w-[700px] lg:m-auto mx-5 !mt-[7rem] !mb-[3rem] '>
                 <hr />
                 <div className='flex justify-center mt-7'>
                     <button className='border text-white rounded-full text-[17px] bg-gradient-to-l to-[#4965E0] from-[#896CDD] w-[20%] py-1'>F.A.Q</button>
