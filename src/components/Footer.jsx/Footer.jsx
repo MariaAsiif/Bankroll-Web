@@ -2,10 +2,13 @@ import React from 'react'
 import logo2 from '../../assests/images/Logo_2.png'
 import { BsInstagram, BsYoutube } from 'react-icons/bs'
 import { AiFillFacebook, AiFillLinkedin } from 'react-icons/ai'
+import { useLocation } from 'react-router-dom'
 const Footer = () => {
+  const location = useLocation().pathname
+
   return (
     <>
-      <div className=' border border-white relative lg:mt-[12rem] mt-4'>
+      <div className={` border border-white relative ${location === "/" && 'lg:mt-[10rem]'} mt-4`}>
         <div className='bg-gradient-to-r mt-[5rem]  from-[#DBE7FA] to-[#F2F6FD] lg:h-[380px] h-full '>
           <div className='lg:mx-20 mx-6'>
             <div className='grid lg:grid-cols-4 md:grid-cols-2   grid-cols-1  pt-[10rem] pb-3'>

@@ -13,7 +13,7 @@ const TypeHelp = () => {
                         </div>
                         <div className='pt-8 text-center'>
                             <h2 className='pb-3 text-[#4965E0] text-[18px] font-roboto font-semibold'>Using Bodrum</h2>
-                            <p className='text-[#77838F] font-semibold font-roboto leading-[30px] lg:max-w-[300px] md:max-w-[300px] tracking-[0.6px]'>Quisque at arcu at turpis lobortis ultrices. Nullam et accumsan mauris. Nunc pellentesque in tellus.</p>
+                            <p  className='text-[#77838F] font-normal font-roboto leading-[30px] lg:max-w-[300px] md:max-w-[300px] tracking-[0.6px]'>Quisque at arcu at turpis lobortis ultrices. Nullam et accumsan mauris. Nunc pellentesque in tellus.</p>
                         </div>
                     </div>
                     <div className=' flex flex-col items-center'>
@@ -22,7 +22,7 @@ const TypeHelp = () => {
                         </div>
                         <div className='pt-8 text-center'>
                             <h2 className='pb-3 text-[#4965E0] text-[18px] font-roboto font-semibold'>Account Help</h2>
-                            <p className='text-[#77838F] font-semibold font-roboto leading-[30px] lg:max-w-[300px] md:max-w-[300px] tracking-[0.6px]'>Quisque at arcu at turpis lobortis ultrices. Nullam et accumsan mauris. Nunc pellentesque in tellus.</p>
+                            <p  className='text-[#77838F] font-normal font-roboto leading-[30px] lg:max-w-[300px] md:max-w-[300px] tracking-[0.6px]'>Quisque at arcu at turpis lobortis ultrices. Nullam et accumsan mauris. Nunc pellentesque in tellus.</p>
                         </div>
                     </div>
                     <div className=' flex flex-col items-center'>
@@ -31,7 +31,7 @@ const TypeHelp = () => {
                         </div>
                         <div className='pt-8 text-center'>
                             <h2 className='pb-3 text-[#4965E0] text-[18px] font-roboto font-semibold'>Pricing Help</h2>
-                            <p className='text-[#77838F] font-semibold font-roboto leading-[30px] lg:max-w-[300px] md:max-w-[300px] tracking-[0.6px]'>Quisque at arcu at turpis lobortis ultrices. Nullam et accumsan mauris. Nunc pellentesque in tellus.</p>
+                            <p  className='text-[#77838F] font-normal font-roboto leading-[30px] lg:max-w-[300px] md:max-w-[300px] tracking-[0.6px]'>Quisque at arcu at turpis lobortis ultrices. Nullam et accumsan mauris. Nunc pellentesque in tellus.</p>
                         </div>
                     </div>
                 </div>

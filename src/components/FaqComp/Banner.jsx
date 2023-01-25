@@ -9,7 +9,7 @@ const Banner = () => {
                     <h2 className='lg:text-[38px] text-[25px] text-white font-roboto font-medium'>How can we help?</h2>
                     <div className='max-w-[500px] md:m-auto lg:m-auto mx-3'>
                         <div className=' bg-white flex items-center  h-[45px] rounded-md mt-[2rem]'>
-                            <input type="text" placeholder='Ask a question' className='focus:outline-none w-full h-full placeholder:text-[14px] placeholder:font-roboto rounded-md placeholder:font-bold px-3 ' />
+                            <input type="text" placeholder='Ask a question' className='focus:outline-none w-full h-full placeholder:text-[14px] placeholder:font-roboto rounded-md placeholder:font-normal px-3 ' />
                             <div className='border mr-1 bg-gradient-to-l rounded-md to-[#4965E0] from-[#896CDD] p-[10px]'>
                                 <BsSearch className='text-white font-bold' />
                             </div>

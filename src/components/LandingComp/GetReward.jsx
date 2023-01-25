@@ -62,7 +62,7 @@ const GetReward = () => {
                             <div className=''>
 
                                 <div className='flex items-center '>
-                                    <img className='mt-6 md:w-[130px]' src={f3} alt="icon_image" />
+                                    <img className='mt-6 lg:!w-[70px] md:!w-[120px]' src={f3} alt="icon_image" />
                                 </div>
 
                             </div>
