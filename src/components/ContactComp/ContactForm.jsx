@@ -16,10 +16,10 @@ const ContactForm = () => {
                 <div className=' relative mt-5'>
                     <div className=' shadow-md border border-gray-100  lg:ml-[10rem] lg:h-[650px] h-full pb-3 '>
                         <div className='lg:pl-[20rem] pl-5 lg:pt-[2rem] lg:mt-0  mt-[40rem] md:pl-[8rem] md:pt-2'>
-                            <h2 className='text-[32px] font-normal font-roboto'>
+                            <h2 className='text-[32px] font-mons' style={{fontWeight:'300'}}>
                                 Send us a
                                 <br />
-                                <span className='text-black font-medium  '>Message</span>
+                                <span className='text-black  font-mons ' style={{fontWeight:'600'}}>Message</span>
                             </h2>
                             <div className='grid lg:grid-cols-2 gap-10 w-full pr-10 pt-[3rem]'>
                                 <div className='border-b w-full flex flex-col'>
@@ -55,10 +55,10 @@ const ContactForm = () => {
                     <div className='absolute top-0 left-0 '>
                         <img src={Contact} className='object-cover lg:w-[100%] md:w-[800px] w-full h-[650px] ' alt="left_imge" />
                         <div className=' absolute top-[15%] lg:left-[15%] md:left-[15%] left-5'>
-                            <h2 className='text-[32px] font-normal font-roboto'>
+                            <h2 className='text-[32px]  font-mons' style={{fontWeight:'300'}}>
                                 Contact
                                 <br />
-                                <span className='text-black font-medium  '>Directly</span>
+                                <span className='text-black   ' style={{fontWeight:'600'}}>Directly</span>
                             </h2>
                             <ul className='pt-8'>
                                 <li className='flex items-center'>
