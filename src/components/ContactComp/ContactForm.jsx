@@ -13,7 +13,7 @@ const ContactForm = () => {
     return (
         <>
             <div className='lg:mx-20 mx-5 mb-[4rem]'>
-                <div className=' relative mt-5'>
+                <div className=' relative mt-5 mr-4'>
                     <div className=' shadow-md border border-gray-100  lg:ml-[10rem] lg:h-[650px] h-full pb-3 '>
                         <div className='lg:pl-[20rem] pl-5 lg:pt-[2rem] lg:mt-0  mt-[40rem] md:pl-[8rem] md:pt-2'>
                             <h2 className='text-[32px] font-mons' style={{fontWeight:'300'}}>
@@ -52,7 +52,7 @@ const ContactForm = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='absolute top-0 left-0 '>
+                    <div className='absolute top-0 -left-4 '>
                         <img src={Contact} className='object-cover lg:w-[100%] md:w-[800px] w-full h-[650px] ' alt="left_imge" />
                         <div className=' absolute top-[15%] lg:left-[15%] md:left-[15%] left-5'>
                             <h2 className='text-[32px]  font-mons' style={{fontWeight:'300'}}>

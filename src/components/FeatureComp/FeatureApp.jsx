@@ -32,8 +32,8 @@ const FeatureApp = () => {
                                 </div>
                                 <p className='lg:max-w-[300px]  pt-2 text-[14px] lg:pl-[2rem] '>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                             </li>
-                            <li>
-                                <div className='flex items-center'>
+                            <li className='pl-4'>
+                                <div className='flex items-center '>
                                     <img className='w-[10%] object-cover' src={ref} alt="icon" />
                                      <h2 style={{fontWeight:'700'}} className=' pt-3 lg:pl-1 px-3 text-[18px] text-[#4965E0]'>Referrals and Royalties( R &R)</h2>
                                 </div>
