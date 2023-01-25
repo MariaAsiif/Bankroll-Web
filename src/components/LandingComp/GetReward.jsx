@@ -23,18 +23,24 @@ const GetReward = () => {
                         <div className='flex lg:flex-row md:flex-row flex-col items-center md:justify-between lg:justify-between text-center mt-[5rem]  lg:px-[8rem] md:px-[3rem] '>
                             <div className='flex flex-col items-center'>
                                 <h2 className='text-[22px] font-medium text-[#896CDD] font-roboto'>2-Minute Registration</h2>
-                                <img className='mt-6 block lg:hidden md:hidden' src={f1} alt="icon_image" />
+                                <div className='hover:animate-shake transition ease-in-out delay-150 cursor-pointer'>
+                                    <img className='mt-6 hover:animate-shake transition ease-in-out delay-150 block lg:hidden md:hidden' src={f1} alt="icon_image" />
+                                </div>
 
                                 <h2 className='max-w-[300px] lg:hidden md:hidden block text-[16px] text-[#8C8E9E] font-roboto'>Sign up from your phone with just a selfie, a photo of your CNIC, and some basic information. No paperwork.</h2>
                             </div>
                             <div className='flex flex-col items-center mt-4'>
                                 <h2 className='text-[22px] font-medium text-[#896CDD] font-roboto'>Simple Payments</h2>
-                                <img className='mt-6 block lg:hidden md:hidden' src={f2} alt="icon_image" />
+                                <div className='hover:animate-shake transition ease-in-out delay-150 cursor-pointer'>
+                                    <img className='mt-6 hover:animate-shake transition ease-in-out delay-150 block lg:hidden md:hidden' src={f2} alt="icon_image" />
+                                </div>
                                 <h2 className='max-w-[300px] lg:hidden md:hidden block text-[16px] text-[#8C8E9E] font-roboto'>Sign up from your phone with just a selfie, a photo of your CNIC, and some basic information. No paperwork.</h2>
                             </div>
                             <div className='flex flex-col items-center mt-4'>
                                 <h2 className='text-[22px] font-medium text-[#896CDD] font-roboto'>100% Transparency</h2>
-                                <img className='mt-6 block lg:hidden md:hidden' src={f3} alt="icon_image" />
+                                <div className='hover:animate-shake transition ease-in-out delay-150 cursor-pointer'>
+                                    <img className='mt-6 hover:animate-shake transition ease-in-out delay-150 block lg:hidden md:hidden' src={f3} alt="icon_image" />
+                                </div>
                                 <h2 className='max-w-[300px] lg:hidden md:hidden block text-[16px] text-[#8C8E9E] font-roboto'>Sign up from your phone with just a selfie, a photo of your CNIC, and some basic information. No paperwork.</h2>
 
                             </div>
@@ -46,7 +52,9 @@ const GetReward = () => {
                         <div className='lg:flex md:flex  items-center text-center   px-[10rem] hidden '>
                             <div className=''>
                                 <div className='flex items-center justify-center'>
-                                    <img className='mt-6' src={f1} alt="icon_image" />
+                                    <div className='hover:animate-shake transition ease-in-out delay-150 cursor-pointer'>
+                                        <img className='mt-6 ' src={f1} alt="icon_image" />
+                                    </div>
                                     <img className='mt-1 lg:block hidden md:block' src={path} alt="icon_image" />
                                 </div>
 
@@ -54,7 +62,9 @@ const GetReward = () => {
                             <div className=''>
 
                                 <div className='flex items-center justify-center'>
-                                    <img className='mt-6' src={f2} alt="icon_image" />
+                                    <div className='hover:animate-shake transition ease-in-out delay-150 cursor-pointer'>
+                                        <img className='mt-6 ' src={f2} alt="icon_image" />
+                                    </div>
                                     <img className='mt-[6rem] lg:block hidden md:block' src={path2} alt="icon_image" />
                                 </div>
 
@@ -62,7 +72,9 @@ const GetReward = () => {
                             <div className=''>
 
                                 <div className='flex items-center '>
-                                    <img className='mt-6 lg:!w-[70px] md:!w-[120px]' src={f3} alt="icon_image" />
+                                    <div className='hover:animate-shake transition ease-in-out delay-150 cursor-pointer'>
+                                        <img className='mt-6 hover:animate-shake transition ease-in-out delay-150 lg:!w-[70px] md:!w-[120px]' src={f3} alt="icon_image" />
+                                    </div>
                                 </div>
 
                             </div>
@@ -74,6 +86,7 @@ const GetReward = () => {
                         </div>
 
                     </div>
+
                 </div>
             </div>
         </>

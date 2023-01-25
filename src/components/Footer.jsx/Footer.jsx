@@ -67,7 +67,7 @@ const Footer = () => {
                 Ready to join?
                 <span className='text-[#896CDD] font-bold px-2 '>Signup today</span>
               </h2>
-              <button className='rounded-full lg:my-0 my-2 w-full lg:w-auto md:w-auto text-white font-roboto px-8 py-3 hover:bg-white  hover:border-[#896CDD] border-[#896CDD] border-2 bg-[#896CDD] hover:text-[#896CDD]'>SignUp now</button>
+              <button className='rounded-full mt-[2rem] text-white font-roboto px-8 py-3 hover:bg-transparent  hover:border-[#896CDD] border-[#896CDD] border-2 bg-[#896CDD] hover:text-[#896CDD]'>SignUp now</button>
             </div>
           </div>
         </div>
