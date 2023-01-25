@@ -17,10 +17,10 @@ const Banner = () => {
                         <div className='flex flex-wrap justify-center mt-6'>
                             <h2 className=' text-white px-2 text-[17px]'>Populer help topics:</h2>
                             <ul className='flex items-center'>
-                                <li className='underline text-white px-2 text-[17px]'>account,</li>
-                                <li className='underline text-white px-2 text-[17px]'>pricing,</li>
-                                <li className='underline text-white px-2 text-[17px]'>payment,</li>
-                                <li className='underline text-white px-2 text-[17px]'>update</li>
+                                <li className='underline text-white px-2 text-[17px]'>Account,</li>
+                                <li className='underline text-white px-2 text-[17px]'>Pricing,</li>
+                                <li className='underline text-white px-2 text-[17px]'>Payment,</li>
+                                <li className='underline text-white px-2 text-[17px]'>Update</li>
                             </ul>
                         </div>
                     </div>
