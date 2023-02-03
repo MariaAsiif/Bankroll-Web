@@ -80,17 +80,17 @@ function Sidebar({
                                 className={`${location === "/" ? "border-b border-white  " : " w-full  my-3 px-6 cursor-pointer group hover:bg-black hover:underline uppercase "
                                     } `}
                             >
-                                <Link to="/businessLogin">
+                                <Link to="/">
                                     <h2 className="text-[20px] pt-2 font-medium font-roboto text-gray-400 group-hover:underline">
                                         Home
                                     </h2>
                                 </Link>
                             </li>
                             <li
-                                className={`${location === "/customer" ? "border-b border-white  " : "w-full  my-3 px-6 cursor-pointer group hover:bg-black hover:underline uppercase "
+                                className={`${location === "/feature" ? "border-b border-white  " : "w-full  my-3 px-6 cursor-pointer group hover:bg-black hover:underline uppercase "
                                     } `}
                             >
-                                <Link to="/signin">
+                                <Link to="/feature">
                                     <h2 className="text-[20px] pt-2 font-medium font-roboto text-gray-400 hover:underline">
                                         {" "}
                                         Feature
@@ -98,10 +98,10 @@ function Sidebar({
                                 </Link>
                             </li>
                             <li
-                                className={`${location === "/ourservices" ? "border-b border-white  " : "w-full  my-3 px-6 cursor-pointer group hover:bg-black hover:underline uppercase "
+                                className={`${location === "/faq" ? "border-b border-white  " : "w-full  my-3 px-6 cursor-pointer group hover:bg-black hover:underline uppercase "
                                     } `}
                             >
-                                <Link to="/categoryLists">
+                                <Link to="/faq">
 
                                     <h2 className="text-[20px] pt-2 font-medium font-roboto text-gray-400 group-hover:underline">
                                         FAQ
@@ -109,10 +109,10 @@ function Sidebar({
                                 </Link>
                             </li>
                             <li
-                                className={`${location === "/aboutus" ? "border-b border-white  " : "w-full  my-3 px-6 cursor-pointer group hover:bg-black hover:underline uppercase "
+                                className={`${location === "/contactus" ? "border-b border-white  " : "w-full  my-3 px-6 cursor-pointer group hover:bg-black hover:underline uppercase "
                                     } `}
                             >
-                                <Link to="/signin">
+                                <Link to="/contactus">
                                     <h2 className="text-[20px] pt-2 font-medium font-roboto text-gray-400 group-hover:underline">
                                      contact Us
                                     </h2>
