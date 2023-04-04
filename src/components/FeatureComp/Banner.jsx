@@ -6,6 +6,9 @@ const Banner = () => {
             <div className='bg-feature-img lg:bg-cover bg-contain lg:bg-no-repeat lg:h-[430px] md:h-[300px] h-[200px]'>
                 <div className='text-center lg:pt-[12rem] md:pt-[10rem] pt-[7rem]'>
                     <h2 className='lg:text-[38px] md:text-[30px] text-[20px] text-white font-roboto font-medium uppercase'>Features</h2>
+                    <p className='text-white text-center'>We take securing the bag to another level. Our decentralized
+                        banking app offers a double wide range of features that are
+                        designed to help BankRollers run it up.</p>
                 </div>
             </div>
         </>

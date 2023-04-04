@@ -13,14 +13,13 @@ const SayGoodby = () => {
                 <div className='flex lg:flex-row md:flex-row flex-col lg:mx-20 mx-5 pt-[2rem]'>
                     <div className='w-full px-3 lg:order-0 md:order-0 order-1'>
                         <h2 className='text-[#060C3A] pt-7 font-medium font-roboto lg:text-[60px] text-[30px] w-full'>
-                            Say goodbye to
+                            Simply transfer
                             <br />
-                            <span className='text-[#4965E0]'>long hold time.</span>
+                            <span className='text-[#4965E0]'> money anywhere.</span>
                         </h2>
                         <p className='max-w-[400px] leading-[30px] text-[18px] mt-5'>
-                            Sign up now for your free Mastercard debit card
-                            and digital wallet. Spend, send and withdraw cash
-                            without fees.
+                            Sign up now for free and instantly cash your life.
+                            Spend, send and receive funds without fees. Sorry, low fees.
 
                         </p>
 

@@ -62,12 +62,19 @@ const Footer = () => {
         </div>
         <div className=' lg:mx-20 mx-5 md:w-[95%]  lg:w-[86%] w-[90%] absolute top-0 '>
           <div className=' bg-white shadow-2xl border border-gray-50 rounded-[40px] p-8 pt-[4rem] h-[200px]' >
-            <div className='flex lg:justify-between md:justify-between lg:flex-row  md:flex-row flex-col lg:px-7 px-0 items-center'>
+            <div className='flex lg:justify-between md:justify-between lg:flex-row   md:flex-row flex-col lg:px-7 px-0 items-center'>
+              <div>
                 <h2 className='text-[#060C3A] lg:text-[40px] text-[20px]'>
-                Ready to join?
-                <span className='text-[#896CDD] font-bold px-2 '>Signup today</span>
-              </h2>
-              <button className='rounded-full mt-[2rem] text-white font-roboto px-8 py-3 hover:bg-transparent  hover:border-[#896CDD] border-[#896CDD] border-2 bg-[#896CDD] hover:text-[#896CDD]'>SignUp now</button>
+                 {location === "/feature" ? "Ready to become a BankRoller?" : "Ready to join?" }
+                 {location !== "/feature" && <span className='text-[#896CDD] font-bold px-2 '>Signup today</span>}
+                </h2>
+                {
+                  location === "/feature" &&
+                  <span className='text-[#896CDD] text-[18px] -mt-3 '>
+                    Download our app today and get your Roll on</span>
+                }
+              </div>
+              <button className='rounded-full  text-white font-roboto px-8 py-3 hover:bg-transparent  hover:border-[#896CDD] border-[#896CDD] border-2 bg-[#896CDD] hover:text-[#896CDD]'>SignUp now</button>
             </div>
           </div>
         </div>
