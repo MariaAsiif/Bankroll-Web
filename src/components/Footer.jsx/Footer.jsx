@@ -61,12 +61,12 @@ const Footer = () => {
           </div>
         </div>
         <div className=' lg:mx-20 mx-5 md:w-[95%]  lg:w-[86%] w-[90%] absolute top-0 '>
-          <div className=' bg-white shadow-2xl border border-gray-50 rounded-[40px] p-8 pt-[4rem] h-[200px]' >
+          <div className=' bg-white shadow-2xl border border-gray-50 rounded-[40px] lg:p-8 p-4 pt-[4rem] lg:h-[200px]' >
             <div className='flex lg:justify-between md:justify-between lg:flex-row   md:flex-row flex-col lg:px-7 px-0 items-center'>
               <div>
                 <h2 className='text-[#060C3A] lg:text-[40px] text-[20px]'>
                  {location === "/feature" ? "Ready to become a " : "Ready to join?" }
-                 {location !== "/feature" ? <span className='text-[#896CDD] font-bold px-2 '>BankRoller?</span> :<span className='text-[#896CDD] font-bold px-2 '>Signup today</span>}
+                 {location === "/feature" ? <span className='text-[#896CDD] font-bold px-2 '>BankRoller?</span> :<span className='text-[#896CDD] font-bold px-2 '>Signup today</span>}
                 </h2>
                 {
                   location === "/feature" &&
