@@ -15,14 +15,12 @@ const SayGoodby = () => {
                         <h2 className='text-[#060C3A] pt-7 font-medium font-roboto lg:text-[60px] text-[30px] w-full'>
                             Simply transfer
                             <br />
-                            <span className='text-[#4965E0]'> money anywhere.</span>
+                            <span className='text-[#4965E0]'> Money Anywhere.</span>
                         </h2>
-                        <p className='max-w-[400px] leading-[30px] text-[18px] mt-5'>
+                        <p className='max-w-[400px] text-[#8C8E9E] leading-[30px] text-[18px] mt-5'>
                             Sign up now for free and instantly cash your life.
                             Spend, send and receive funds without fees. Sorry, low fees.
-
                         </p>
-
                         <button className='rounded-full mt-[3rem] text-white font-roboto px-8 py-3 hover:bg-transparent hover:border-[#896CDD] border-2 bg-[#896CDD] hover:text-[#896CDD]'>Get Started</button>
 
 

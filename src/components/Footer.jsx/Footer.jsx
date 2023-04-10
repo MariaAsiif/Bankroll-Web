@@ -65,12 +65,12 @@ const Footer = () => {
             <div className='flex lg:justify-between md:justify-between lg:flex-row   md:flex-row flex-col lg:px-7 px-0 items-center'>
               <div>
                 <h2 className='text-[#060C3A] lg:text-[40px] text-[20px]'>
-                 {location === "/feature" ? "Ready to become a BankRoller?" : "Ready to join?" }
-                 {location !== "/feature" && <span className='text-[#896CDD] font-bold px-2 '>Signup today</span>}
+                 {location === "/feature" ? "Ready to become a " : "Ready to join?" }
+                 {location !== "/feature" ? <span className='text-[#896CDD] font-bold px-2 '>BankRoller?</span> :<span className='text-[#896CDD] font-bold px-2 '>Signup today</span>}
                 </h2>
                 {
                   location === "/feature" &&
-                  <span className='text-[#896CDD] text-[18px] -mt-3 '>
+                  <span className='text-[#C2C2C2] text-[18px] -mt-3 '>
                     Download our app today and get your Roll on</span>
                 }
               </div>

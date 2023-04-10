@@ -11,7 +11,7 @@ const Control = () => {
               <img src={control} className='w-full lg:h-[800px] h-[400px]  object-cover ' alt="control" />
             </div>
             <div className='w-full lg:px-[7rem] px-5'>
-              <h2 className='text-[#060C3A] lg:pt-7 leading-[50px] font-bold font-roboto lg:text-[50px] text-[20px] w-full'>
+              <h2 className='text-[#060C3A] lg:pt-7 max-w-[400px] leading-[50px] font-bold font-roboto lg:text-[40px] text-[20px] w-full'>
                 Simple Money Transfer
               </h2>
               <p className='max-w-[400px] leading-[30px] text-[18px] lg:mt-5 mt-2'>

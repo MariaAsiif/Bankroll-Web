@@ -14,7 +14,7 @@ const GetReward = () => {
                         <div className='flex lg:flex-row md:flex-row flex-col pb-[4rem] pt-[1rem]  lg:justify-between lg:px-[5rem] px-[1rem] border-b shadow-md'>
                             <div className='flex items-center w-full '>
                                 <img src={reward} className='lg:w-auto w-[20%]' alt="reword" />
-                                <h2 className='lg:px-4 px-2 font-bold font-roboto text-[#060C3A] text-[20px] lg:text-[2rem]'>Sign Up And Get Your Roll On</h2>
+                                <h2 className='lg:px-4 px-2 font-bold font-roboto  text-[#060C3A] text-[20px] lg:text-[2rem]'>Sign Up And Get Your Roll On</h2>
                             </div>
                             <div>
                                 <p className='text-[#8C8E9E] lg:text-[20px] text-[16px] lg:pt-0 pt-4'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia. </p>
@@ -22,7 +22,7 @@ const GetReward = () => {
                         </div>
                         <div className='flex lg:flex-row md:flex-row flex-col items-center md:justify-between lg:justify-between text-center mt-[5rem]  lg:px-[8rem] md:px-[3rem] '>
                             <div className='flex flex-col items-center mt-4'>
-                                <h2 className='text-[22px] text-start font-medium text-[#896CDD] font-roboto'>Sign Up And Get Your Roll On</h2>
+                                <h2 className='text-[22px] max-w-[250px] text-center font-medium text-[#896CDD] font-roboto'>Sign Up And Get Your Roll On</h2>
                                 <div className='hover:animate-shake transition ease-in-out delay-150 cursor-pointer'>
                                     <img className='mt-6 hover:animate-shake transition ease-in-out delay-150 block lg:hidden md:hidden' src={f1} alt="icon_image" />
                                 </div>
@@ -34,7 +34,7 @@ const GetReward = () => {
                                     banking app. It’s really that easy.</h2>
                             </div>
                             <div className='flex flex-col items-center mt-4'>
-                                <h2 className='text-[22px] font-medium text-[#896CDD] font-roboto'>Nothing Like Money In The Bank</h2>
+                                <h2 className='text-[22px] max-w-[250px] text-center font-medium text-[#896CDD] font-roboto'>Nothing Like Money In The Bank</h2>
                                 <div className='hover:animate-shake transition ease-in-out delay-150 cursor-pointer'>
                                     <img className='mt-6 hover:animate-shake transition ease-in-out delay-150 block lg:hidden md:hidden' src={f2} alt="icon_image" />
                                 </div>
@@ -46,7 +46,7 @@ const GetReward = () => {
                                     so much more.</h2>
                             </div>
                             <div className='flex flex-col items-center mt-4'>
-                                <h2 className='text-[22px] font-medium text-[#896CDD] font-roboto'>Blink Of An Eye Registration</h2>
+                                <h2 className='text-[22px]  max-w-[250px] text-center font-medium text-[#896CDD] font-roboto'>Blink Of An Eye Registration</h2>
                                 <div className='hover:animate-shake transition ease-in-out delay-150 cursor-pointer'>
                                     <img className='mt-6 hover:animate-shake transition ease-in-out delay-150 block lg:hidden md:hidden' src={f3} alt="icon_image" />
                                 </div>
@@ -91,7 +91,7 @@ const GetReward = () => {
 
                             </div>
                         </div>
-                        <div className='lg:flex md:flex  justify-between items-center text-center mt-[3rem]  px-[4rem] hidden'>
+                        <div className='lg:flex md:flex  justify-between text-center   px-[4rem] hidden'>
                             <h2 className='max-w-[300px] text-[16px] text-[#8C8E9E] font-roboto'>Join BankRoll today for free before we add a ridiculous
                                 membership fee. Not unless you would actually pay it. Create
                                 your Roll and instantly cash your life. Simply transfer money
