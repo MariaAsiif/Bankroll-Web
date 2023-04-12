@@ -51,7 +51,7 @@ function Sidebar({
 
 
             <div id="sidebar" ref={sidebar} className={`flex flex-col  absolute z-50  left-0 top-0 lg:left-0  
-      ${sidebarOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'} lg:translate-x-0 h-screen overflow-y-scroll lg:overflow-y-auto no-scrollbar w-64  lg:sidebar-expanded:!w-64 2xl:!w-64 shrink-0 bg-white  border-l py-4 transition-all duration-200 ease-in-out ${sidebarOpen ? 'translate-x-0' : '-translate-x-64'}`} >
+      ${sidebarOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'} h-screen lg:translate-x-0  overflow-y-scroll lg:overflow-y-auto no-scrollbar w-64  lg:sidebar-expanded:!w-64 2xl:!w-64 shrink-0 bg-white py-4 transition-all duration-200 ease-in-out ${sidebarOpen ? 'translate-x-0' : '-translate-x-64'}`} >
                 {/* Sidebar header */}
                 <div className=" mb-10 pr-6 sm:px-2">
                     {/* Close button */}

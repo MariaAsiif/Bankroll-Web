@@ -4,7 +4,7 @@ import cirle1 from '../../assests/images/circle-03.png'
 const Control = () => {
   return (
     <>
-      <div className='relative'>
+      <div className='relative md:mt-[10rem]'>
         <div className='bg-control-img bg-cover bg-no-repeat lg:h-[900px] lg:pb-0 pb-4 h-full md:mt-[30rem] lg:mt-[40rem] mt-[55rem]'>
           <div className='flex lg:flex-row md:flex-row flex-col lg:justify-between items-center '>
             <div className='w-full h-full flex justify-center lg:ml-[12rem] md:ml-[5rem] lg:mt-[1rem] mt-[20px]'>

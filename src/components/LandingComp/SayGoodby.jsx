@@ -12,10 +12,10 @@ const SayGoodby = () => {
             <div className='bg-gradient-to-r from-[#DBE7FA] to-[#F2F6FD] h-full pb-[7rem] '>
                 <div className='flex lg:flex-row md:flex-row flex-col lg:mx-20 mx-5 pt-[2rem]'>
                     <div className='w-full px-3 lg:order-0 md:order-0 order-1'>
-                        <h2 className='text-[#060C3A] pt-7 font-medium font-roboto lg:text-[60px] text-[30px] w-full'>
+                        <h2 className='text-[#060C3A] pt-7 font-semibold font-roboto lg:text-[60px] text-[30px] w-full'>
                             Simply transfer
                             <br />
-                            <span className='text-[#4965E0]'> Money Anywhere.</span>
+                            <span className='text-[#4965E0] font-bold'> Money Anywhere.</span>
                         </h2>
                         <p className='max-w-[400px] text-[#8C8E9E] leading-[30px] text-[18px] mt-5'>
                             Sign up now for free and instantly cash your life.

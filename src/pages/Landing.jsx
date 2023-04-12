@@ -8,7 +8,7 @@ import Transfer from '../components/LandingComp/Transfer'
 const Landing = () => {
   return (
     <Layout>
-      <div className='relative'>
+      <div className='relative lg:pb-0 md:pb-[10rem] pb-[35rem]'>
         <SayGoodby />
         <GetReward />
       </div>
