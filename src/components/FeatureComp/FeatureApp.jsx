@@ -55,12 +55,12 @@ const FeatureApp = () => {
                                 </p>
                             </li>
 
-                            <li className='lg:pl-4'>
+                            <li className=''>
                                 <div className='flex items-center '>
                                     <img className='lg:w-[15%] md:w-auto w-[12%] object-cover' src={ref} alt="icon" />
-                                    <h2 style={{ fontWeight: '700' }} className=' pt-3 lg:pl-1 px-3 text-[18px] text-[#4965E0]'>Referrals and Royalties( R &R)</h2>
+                                    <h2 style={{ fontWeight: '700' }} className=' pt-3 lg:pl-2 px-3 text-[18px] text-[#4965E0]'>Referrals and Royalties</h2>
                                 </div>
-                                <p className='lg:max-w-[300px]  pt-2  text-[14px] lg:pl-[2rem] '>Who doesn’t love a reward? Honestly, we cannot think of a single
+                                <p className='lg:max-w-[350px]  pt-2  text-[14px] lg:pl-[3.5rem] '>Who doesn’t love a reward? Honestly, we cannot think of a single
                                     person. Earn extra coin simply by inviting friends, family-
                                     complete strangers, to use BankRoll.  And receive royalties on the
                                     Back End for as long as they use the app.</p>
@@ -98,7 +98,7 @@ const FeatureApp = () => {
                                     and cryptocurrency in one place.</p>
 
                             </li>
-                            <li className=''>
+                            <li className='lg:-ml-4'>
                                 <div className='flex items-center'>
                                     <img className='lg:w-[10%] w-[12%] md:w-[5%] object-cover ' src={doller} alt="icon" />
                                     <h2 style={{ fontWeight: '700' }} className=' pl-2 text-[18px] text-[#4965E0]'>USDC Payment </h2>
@@ -128,7 +128,7 @@ const FeatureApp = () => {
                     </div>
                     
                     <div className="flex lg:pb-0 pb-10  ">
-                        <div className=" lg:pl-[3.5rem] ">
+                        <div className=" lg:pl-[3rem] ">
                             <div className='flex items-center '>
                                 <img className='lg:w-[10%] object-contain mt-5' src={peer} alt="icon" />
                                 <h2 style={{ fontWeight: '700' }} className=' pt-3 lg:pl-2 px-3 text-[18px] text-[#4965E0]'>Peer To Peer</h2>
@@ -153,7 +153,7 @@ const FeatureApp = () => {
                         <p className='pt-2  text-[14px] lg:pl-[2.5rem] max-w-[350px] '>Pull up on a financial coach to get your mind right, money right. Tap in to receive updates on the latest investment opportunities. Zone out with like minded BankRollers.</p>
                     </div>
                     <div className="lg:pb-0 pb-10 md:pb-10">
-                        <div className="lg:pl-[4rem]  ">
+                        <div className="lg:pl-[3.5rem]  ">
                             <div className='flex items-center '>
                                 <img className='lg:w-[8%] object-cover lg:mt-5'  src={stash} alt="icon" />
                                 <h2 style={{ fontWeight: '700' }} className=' pt-3 lg:pl-3 px-3 text-[18px] text-[#4965E0]'>Stash</h2>
