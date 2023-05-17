@@ -1,13 +1,13 @@
 import React from 'react'
 import FilterSection from '../components/AdminComp/GenericComp/FilterSection'
-import UsersList from '../components/AdminComp/Usersmanagment/UsersList'
+import AuditList from '../components/AdminComp/Auditsmanagment/AuditList'
 
 const AuditLogs = () => {
     return (
         <>
-            <FilterSection title={"Audit Logs"}/>
+            <FilterSection title={"Audit Logs"} buttonTitle={"Add New FAQ's"}/>
             <div className='mt-10'>
-                <UsersList />
+                <AuditList />
             </div>
 
         </>

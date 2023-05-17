@@ -30,7 +30,7 @@ const Login = () => {
           <div className='relative'>
             <img src={loginImg2} alt={loginImg2} className='object-cover h-screen object-center' />
             <img src={circle1} alt="topleft" className='object-cover absolute bottom-0 right-0  ' />
-            <img src={circle2} alt="topleft" className='object-cover absolute top-0 border ' />
+            <img src={circle1} alt="topleft" className='object-cover absolute top-0 rotate-180 ' />
           </div>
 
           <div className='absolute z-30 left-0 right-0 top-[20%] max-w-lg  m-auto '>

@@ -3,6 +3,7 @@ import AuditLogs from '../pages/AuditLog';
 import Contact from '../pages/Contact';
 import Dashboard from '../pages/Dashboard';
 import Faq from '../pages/Faq';
+import Faqs from '../pages/Faqs';
 import Feature from '../pages/Feature';
 import Landing from '../pages/Landing';
 import Login from '../pages/Login';
@@ -36,6 +37,7 @@ const router = createBrowserRouter(
         <Route path="/usermanagment/role" element={<RoleManagement />} />
         <Route path="/usermanagment/users" element={<Users />} />
         <Route path="/usermanagment/audit" element={<AuditLogs />} />
+        <Route path="/faqs" element={<Faqs />} />
 
       </Route>
     </>
