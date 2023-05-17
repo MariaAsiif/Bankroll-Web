@@ -68,7 +68,7 @@ const SidebarObj = () => {
                 label: 'Audit Logs',
                 leftIcon: <HiOutlineDocumentText className='text-[20px]'/>,
                 activeLeftIcon: <HiOutlineDocumentText className='text-[#4965E0]'/>,
-                path: '/vehicalOwner',
+                path: '/usermanagment/audit',
                 icon: "",
                 subMenuItems: [],
               },
