@@ -5,7 +5,7 @@ import UsersList from '../components/AdminComp/Usersmanagment/UsersList'
 const Users = () => {
     return (
         <>
-            <FilterSection title={"Users"}/>
+            <FilterSection title={"Users"} buttonTitle={"Add Users"}/>
             <div className='mt-10'>
                 <UsersList />
             </div>

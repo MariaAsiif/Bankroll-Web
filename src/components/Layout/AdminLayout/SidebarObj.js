@@ -130,8 +130,8 @@ const SidebarObj = () => {
             ),
           
             rightIcon: 'sadf',
-            path: '/manageRole',
-            pathname: 'manageRole',
+            path: '/faqs',
+            pathname: 'faqs',
             subMenuItems: [
 
             ],

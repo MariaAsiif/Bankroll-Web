@@ -13,6 +13,10 @@ body {
     monospace;
 } */
 
+.react-responsive-modal-closeButton{
+  display: none !important
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
