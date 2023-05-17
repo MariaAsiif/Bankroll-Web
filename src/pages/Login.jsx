@@ -18,7 +18,7 @@ const Login = () => {
     if (loading === true) {
       setTimeout(() => {
         setLoading(false)
-        navigate('/')
+        navigate('/dashboard')
       }, 2000);
     }
   }, [loading])
