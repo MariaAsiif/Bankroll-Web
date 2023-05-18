@@ -24,7 +24,7 @@ const Dashboard = () => {
   return (
     <>
       <div className=''>
-        <div className='grid grid-cols-3 gap-5'>
+        <div className='grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5'>
           {/* Left  */}
           <div className=''>
             <h1>My Card</h1>
@@ -148,8 +148,8 @@ const Dashboard = () => {
 
           </div>
           {/* Right */}
-          <div className='col-span-2 border-l'>
-            <div className='grid grid-cols-2 gap-5 border-b pb-4'>
+          <div className='xl:col-span-2 xl:border-l md:border-l'>
+            <div className='grid xl:grid-cols-2 gap-5 border-b pb-4'>
               <div className='px-2 border-r'>
                 <div className='flex justify-between items-center'>
                   <h2 className='text-[22px] font-medium font-intr'>Money Flow</h2>
@@ -203,7 +203,48 @@ const Dashboard = () => {
                   <MdKeyboardArrowRight className='text-[20px] ml-2' />
                 </div>
               </div>
-              {
+
+              <div className="relative overflow-x-auto mt-7">
+                <table className="w-full text-sm text-left ">
+                  <thead className="text-[#C2C2C2] text-[13px] border-b ">
+                    
+                  </thead>
+                  <tbody>
+                    {
+                      Array(5).fill(5).map((_, i) => (
+                        <tr key={i} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                          <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <div className='flex items-center'>
+                              <img src={bitcoin} alt="coin" className='object-cover' />
+                              <h2 className='text-[11px] px-2 font-roboto italic text-[#343744]'>Bitcoin Transactions</h2>
+                            </div>
+                          </th>
+                          <td className="px-6 py-4">
+                            <h2 className='text-[11px] font-roboto italic text-[#000000]'>Jan 16, 2020</h2>
+
+                          </td>
+                          <td className="px-6 py-4">
+                            <h2 className='text-[11px] font-roboto italic text-[#343744]'>*****45242</h2>
+
+                          </td>
+                          <td className="px-6 py-4">
+                            <h2 className='text-[11px] font-roboto italic text-[#343744]'>B-$853.00</h2>
+
+                          </td>
+                          <td className="px-6 py-4">
+                            <button className='w-fit px-3 py-2 text-[11px] font-roboto italic rounded-lg text-[#61BB84] bg-[#EBFFF3]'>Success</button>
+
+
+                          </td>
+                        </tr>
+                      ))
+                    }
+
+
+                  </tbody>
+                </table>
+              </div>
+              {/* {
                 Array(5).fill(5).map((_, i) => (
 
 
@@ -226,7 +267,7 @@ const Dashboard = () => {
                     </div>
                   </div>
                 ))
-              }
+              } */}
 
             </div>
 
@@ -234,7 +275,7 @@ const Dashboard = () => {
 
             <div className='p-5 bg-white shadow-lg rounded-lg mt-6 ml-2'>
               <h2 className='text-[22px] font-medium font-intr pt-5'>Statistics</h2>
-              <div className='grid grid-cols-4 gap-5 py-8'>
+              <div className='grid xl:grid-cols-4 md:grid-cols-2 grid-cols-2 gap-5 py-8'>
                 <div className='flex items-center'>
                   <img src={st1} alt="static_pic" className='object-cover' />
                   <div className='pl-2'>
