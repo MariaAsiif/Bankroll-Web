@@ -17,9 +17,18 @@ import st1 from '../assests/images/st1.png'
 import st2 from '../assests/images/st2.png'
 import st3 from '../assests/images/st3.png'
 import st4 from '../assests/images/st4.png'
+import recent1 from '../assests/images/rs1.png'
+import recent2 from '../assests/images/rs2.png'
+import recent3 from '../assests/images/rs3.png'
 import { MdEdit, MdKeyboardArrowDown, MdKeyboardArrowRight } from 'react-icons/md'
 import { BsPlusCircleFill, BsSearch } from 'react-icons/bs'
 import DashboardChart from '../components/AdminComp/DashboardComp/Chart'
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper";
 const Dashboard = () => {
   return (
     <>
@@ -190,6 +199,46 @@ const Dashboard = () => {
                     <BsSearch className='' />
                   </div>
                 </div>
+                <div className='mt-5'>
+                  <Swiper
+                    slidesPerView={1}
+                    spaceBetween={0}
+                    modules={[Navigation]}
+                    breakpoints={{
+                      "@0.00": {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                      },
+                      "@0.75": {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                      },
+                      "@1.00": {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                      },
+                      "@1.50": {
+                        slidesPerView: 4,
+                        spaceBetween: 50,
+                      },
+                    }}
+                    className="mySwiper"
+                  >
+                    {
+                      Array(8).fill(8).map((_, i) => (
+                        <SwiperSlide key={i}>
+                          <img src={recent1} alt="recent" className='object-cover ' />
+                        </SwiperSlide>
+
+                      ))
+                    }
+
+                  </Swiper>
+                </div>
+
+                <div className='bg-white h-[150px] mt-5 relative border shadow-2xl rounded-md p-5'>
+                  <h2 className='text-[22px] font-intr font-medium text-[#141736]'>Group <span className='text-[#7C8CA6]'>Chat</span></h2>
+                </div>
               </div>
             </div>
 
@@ -207,7 +256,7 @@ const Dashboard = () => {
               <div className="relative overflow-x-auto mt-7">
                 <table className="w-full text-sm text-left ">
                   <thead className="text-[#C2C2C2] text-[13px] border-b ">
-                    
+
                   </thead>
                   <tbody>
                     {

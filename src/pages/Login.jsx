@@ -26,15 +26,15 @@ const Login = () => {
     <>
       <div className='relative'>
         <div className="relative">
-          <img src={loginImg} alt={loginImg} className='object-cover object-center h-full' />
+          <img src={loginImg} alt={loginImg} className='object-cover h-full first_img' />
           <div className='relative'>
-            <img src={loginImg2} alt={loginImg2} className='object-cover h-screen object-center' />
+            <img src={loginImg2} alt={loginImg2} className='object-cover second_img' />
             <img src={circle1} alt="topleft" className='object-cover absolute bottom-0 right-0  ' />
             <img src={circle1} alt="topleft" className='object-cover absolute top-0 rotate-180 ' />
           </div>
 
-          <div className='absolute z-30 left-0 right-0 top-[20%] max-w-lg  m-auto '>
-            <div className='border shadow-md bg-white rounded-md px-14 py-5'>
+          <div className='absolute z-30 left-0 right-0 top-[20%] login_box max-w-lg  m-auto '>
+            <div className='border shadow-md bg-white rounded-md xl:px-14 md:px-14 px-6 py-5'>
               <div className='flex justify-center items-center pt-2'>
                 <img src={logo} alt="topleft" className='object-cover' />
               </div>
