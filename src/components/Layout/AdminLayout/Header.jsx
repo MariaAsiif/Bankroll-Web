@@ -5,6 +5,8 @@ import React from 'react';
 // import Help from '../../../util/dropdowns/DropdownHelp';
 // import UserMenu from '../../../util/dropdowns/DropdownProfile';
 import { MdSearch } from 'react-icons/md';
+import { GrNotification } from 'react-icons/gr';
+import user from '../../../assests/images/User.png'
 // import { useSelector } from 'react-redux';
 
 function Header({
@@ -43,9 +45,19 @@ function Header({
 
           <div>
             <div className='bg-white  hidden shadow-sm rounded-full border lg:flex items-center px-2 w-[380px] py-2'>
-              <MdSearch className='text-[25px] text-[#FF8C00]' />
+              <MdSearch className='text-[25px] ' />
               <input type="text" className='focus:outline-none mx-2 w-full placeholder:text-[#ACACAC] placeholder:text-[16px]' placeholder='Search...' />
             </div>
+          </div>
+
+          <div className='flex items-center'>
+            <select className='border-0 focus:outline-none'>
+              <option>EN</option>
+            </select>
+
+            <GrNotification className='mx-4'/>
+
+            <img src={user} alt="user" className='objet-cover' />
           </div>
 
           {/* Header: Right side */}

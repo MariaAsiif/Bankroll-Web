@@ -6,7 +6,7 @@ const AddRole = ({ setShow }) => {
     // const Roles = [{}]
     return (
         <>
-            <div className='w-[750px]'>
+            <div className='xl:w-[750px] md:w-full w-[300px]'>
                 <div className='flex justify-between items-center border-b pb-2 '>
                     <h2 className='text-[17px] text-[#7869DD] font-sans font-medium'>Add Role</h2>
                     <MdClose className='text-red-500 text-[20px] cursor-pointer' onClick={setShow} />
