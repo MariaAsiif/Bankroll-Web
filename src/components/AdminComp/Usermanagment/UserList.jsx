@@ -1,12 +1,24 @@
-import React from 'react'
-import { BsEye } from 'react-icons/bs';
-import { MdDelete, MdEdit } from 'react-icons/md';
+import React,{useState} from 'react'
+import EditDeleteViewButtons from '../../GenericComp/EditDeleteViewButtons';
+import Popup from '../../../utils/popup/Popup'
+import DeletePopup from '../../GenericComp/DeletePopup'
+import AddUser from './AddUser'
 const UserList = () => {
     const items = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
+    const [popuptype , setPopuptype] = useState("")
+    const [show , setShow] = useState(false)
 
+    const handleClick = (type)=> {
+        setShow(true)
+        setPopuptype(type)
+    }
+
+     
 
     return (
         <>
+        { show && <Popup modalOpen={show} onClose={() => setShow(false)} data={popuptype === "delete" ? <DeletePopup permition={popuptype} Toggle={setShow} /> : <AddUser type={popuptype} setShow={() => setShow(false)}  />} /> } 
+
             <div className=' bg-white rounded-md shadow-md border '>
                 <div className="overflow-x-auto  mt-6">
                     {
@@ -74,11 +86,7 @@ const UserList = () => {
 
 
                                                 <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                                    <div className='flex justify-between items-center'>
-                                                        <BsEye className='text-[20px] text-[#C2C2C2]' />
-                                                        <MdEdit className='text-[20px] text-[#C2C2C2]' />
-                                                        <MdDelete className='text-[20px] text-red-500' />
-                                                    </div>
+                                                    <EditDeleteViewButtons handleClick={handleClick} />
                                                 </td>
 
 
@@ -100,7 +108,7 @@ const UserList = () => {
                     }
 
 
-                    
+
 
                 </div>
 

@@ -6,7 +6,8 @@ import React from 'react';
 // import UserMenu from '../../../util/dropdowns/DropdownProfile';
 import { MdSearch } from 'react-icons/md';
 import { GrNotification } from 'react-icons/gr';
-import user from '../../../assests/images/User.png'
+// import user from '../../../assests/images/User.png'
+import DropdownProfile from '../../../utils/dropdown/DropdownProfile';
 // import { useSelector } from 'react-redux';
 
 function Header({
@@ -55,9 +56,9 @@ function Header({
               <option>EN</option>
             </select>
 
-            <GrNotification className='mx-4'/>
-
-            <img src={user} alt="user" className='objet-cover' />
+            <GrNotification className='mx-4' />
+            <DropdownProfile />
+            {/* <img src={user} alt="user" className='objet-cover' /> */}
           </div>
 
           {/* Header: Right side */}

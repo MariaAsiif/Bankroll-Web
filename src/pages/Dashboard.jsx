@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import card from '../assests/images/card.png'
 import visa from '../assests/images/visa.png'
 import master from '../assests/images/master.png'
@@ -18,9 +18,9 @@ import st2 from '../assests/images/st2.png'
 import st3 from '../assests/images/st3.png'
 import st4 from '../assests/images/st4.png'
 import recent1 from '../assests/images/rs1.png'
-import recent2 from '../assests/images/rs2.png'
-import recent3 from '../assests/images/rs3.png'
-import { MdEdit, MdKeyboardArrowDown, MdKeyboardArrowRight } from 'react-icons/md'
+// import recent2 from '../assests/images/rs2.png'
+// import recent3 from '../assests/images/rs3.png'
+import { MdClose, MdEdit, MdKeyboardArrowDown, MdKeyboardArrowRight } from 'react-icons/md'
 import { BsPlusCircleFill, BsSearch } from 'react-icons/bs'
 import DashboardChart from '../components/AdminComp/DashboardComp/Chart'
 // Import Swiper React components
@@ -29,7 +29,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
+import DropdownCreditCard from '../utils/dropdown/DropdownCreditCards'
 const Dashboard = () => {
+  const [search, setSearch] = useState(false)
   return (
     <>
       <div className=''>
@@ -38,8 +40,8 @@ const Dashboard = () => {
           <div className=''>
             <h1>My Card</h1>
             {/* Card  */}
-            <div className='relative pt-3'>
-              <img src={card} alt="card" className='object-cover w-full' />
+            <div className='relative pt-3 '>
+              <img src={card} alt="card" className='object-cover w-full shadow-xl  rounded-2xl' />
               <div className="">
                 <img src={visa} alt="card" className='object-cover absolute right-8 bottom-8' />
                 <div className='absolute top-[18%] left-5 '>
@@ -55,18 +57,7 @@ const Dashboard = () => {
             {/* Money */}
             <div className='pt-5'>
               <h1 className='text-[22px] font-medium font-intr '>My Card</h1>
-              <div className='bg-white shadow-md rounded-xl border border-gray-100 mt-3 p-5'>
-                <div className='flex justify-between items-center'>
-                  <div className='flex items-center'>
-                    <img src={master} alt="master-card" className='object-cover' />
-                    <h2 className='px-3 font-normal text-[16px]'>Debit</h2>
-                  </div>
-                  <div className='flex  items-center'>
-                    <h2 className='text-[16px] font-normal text-[#131635] px-2'><span className='text-[#A4B4CB] px-2'>$</span>1080</h2>
-                    <MdKeyboardArrowDown className='text-[#A5B4CB] text-[20px]' />
-                  </div>
-                </div>
-              </div>
+              <DropdownCreditCard />
               <div className='bg-white shadow-md rounded-xl border border-gray-100 mt-3 p-5'>
                 <div className='flex items-center'>
                   <img src={user} alt="master-card" className='object-cover' />
@@ -192,11 +183,18 @@ const Dashboard = () => {
                 <div className='flex justify-between items-center'>
                   <div>
                     <h2 className='text-[22px] font-medium font-intr'>Recent Contacts</h2>
-                    <p className='text-[#7D8DA6] text-[11px]'>18 recipients</p>
+                    {search ?
+                      <div className='flex items-center'>
+                        <input type="text" placeholder='type here' className='border-0 focus:outline-none placeholder:text-[14px]' />
+                        <MdClose onClick={() => setSearch(false)} className='cursor-pointer' />
+                      </div>
+                      :
+                      <p className='text-[#7D8DA6] text-[11px]'>18 recipients</p>
+                    }
                   </div>
                   <div className='flex items-center'>
                     <MdEdit className='mx-2 text-[#1E1F20]' />
-                    <BsSearch className='' />
+                    <BsSearch onClick={() => setSearch(true)} className='cursor-pointer' />
                   </div>
                 </div>
                 <div className='mt-5'>
@@ -236,7 +234,7 @@ const Dashboard = () => {
                   </Swiper>
                 </div>
 
-                <div className='bg-white h-[150px] mt-5 relative border shadow-2xl rounded-md p-5'>
+                <div className='bg-white h-[150px] mt-5 relative border shadow-xl rounded-md p-5'>
                   <h2 className='text-[22px] font-intr font-medium text-[#141736]'>Group <span className='text-[#7C8CA6]'>Chat</span></h2>
                 </div>
               </div>

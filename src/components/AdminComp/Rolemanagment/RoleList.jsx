@@ -1,6 +1,5 @@
 import React from 'react'
-import { BsEye } from 'react-icons/bs';
-import { MdDelete, MdEdit } from 'react-icons/md';
+import EditDeleteViewButtons from '../../GenericComp/EditDeleteViewButtons';
 const RoleList = () => {
     const items = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
 
@@ -29,7 +28,7 @@ const RoleList = () => {
                                         <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                             <div className="font-medium text-[14px] text-center">Description</div>
                                         </th>
-                                      
+
                                         <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                             <div className="font-medium text-[14px] text-end mx-5">Action  </div>
                                         </th>
@@ -47,8 +46,8 @@ const RoleList = () => {
                                                 <td className="px-2 first:pl-5 flex items-center last:pr-5 py-3 whitespace-nowrap">
                                                     <div className="text-left text-[14px] text-[#898989] px-1">john</div>
                                                 </td>
-                                                
-                                               
+
+
                                                 <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                                     <div className="text-center text-[14px] text-[#898989] px-1">Super Admin</div>
                                                 </td>
@@ -58,11 +57,7 @@ const RoleList = () => {
 
 
                                                 <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                                    <div className='flex justify-end items-center'>
-                                                        <BsEye className='text-[20px] text-[#C2C2C2]' />
-                                                        <MdEdit className='text-[20px] mx-4 text-[#C2C2C2]' />
-                                                        <MdDelete className='text-[20px] text-red-500' />
-                                                    </div>
+                                                    <EditDeleteViewButtons />
                                                 </td>
 
 
@@ -84,7 +79,7 @@ const RoleList = () => {
                     }
 
 
-                    
+
 
                 </div>
 
