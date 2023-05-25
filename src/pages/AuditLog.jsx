@@ -5,7 +5,7 @@ import AuditList from '../components/AdminComp/Auditsmanagment/AuditList'
 const AuditLogs = () => {
     return (
         <>
-            <FilterSection title={"Audit Logs"} buttonTitle={"Add New FAQ's"}/>
+            <FilterSection title={"Audit Logs"} buttonTitle={"Add Audit Log"}/>
             <div className='mt-10'>
                 <AuditList />
             </div>

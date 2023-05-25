@@ -1,12 +1,24 @@
-import React from 'react'
-import { BsEye } from 'react-icons/bs';
-import { MdDelete, MdEdit } from 'react-icons/md';
+import React,{useState} from 'react'
+import EditDeleteViewButtons from '../../GenericComp/EditDeleteViewButtons';
+import Popup from '../../../utils/popup/Popup'
+// import DeletePopup from '../../GenericComp/DeletePopup'
+// import AddUser from './AddUser'
 const UsersList = () => {
     const items = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
+    const [popuptype , setPopuptype] = useState("")
+    const [show , setShow] = useState(false)
 
+    const handleClick = (type)=> {
+        setShow(true)
+        setPopuptype(type)
+    }
+
+    // let type = popuptype === "delete" ? <DeletePopup permition={popuptype} Toggle={setPopuptype} /> : <AddUser type={popuptype} /> 
 
     return (
         <>
+
+        {/* { show && <Popup modalOpen={show} onClose={() => setShow(false)} data={type} /> }  */}
             <div className=' bg-white rounded-md shadow-md border '>
                 <div className="overflow-x-auto  mt-6">
                     {
@@ -57,29 +69,25 @@ const UsersList = () => {
                                                     <div className=" flex-col text-[14px] text-[#898989] px-1">
                                                         <div className='flex justify-center  flex-col items-center  '>
                                                             <h2 className='text-[13px] text-left text-[#222B45] font-semibold font-sans'>David Wagner</h2>
-                                                           
+
                                                         </div>
                                                     </div>
                                                 </td>
-                                               
+
                                                 <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                                     <div className="text-left text-[14px] text-[#898989] px-1">tranthuy.nute@gmail.com</div>
                                                 </td>
                                                 <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                                     <div className="text-left text-[14px] text-[#898989] px-1">245715874815</div>
                                                 </td>
-                                               
+
                                                 <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                                     <div className="text-center p-1 w-[80%] text-[14px] text-white  rounded-full bg-gradient-to-r from-[#4965E0] to-[#896CDD] ">
                                                         Active</div>
                                                 </td>
 
                                                 <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                                    <div className='flex justify-between items-center'>
-                                                        <BsEye className='text-[20px] text-[#C2C2C2]' />
-                                                        <MdEdit className='text-[20px] text-[#C2C2C2]' />
-                                                        <MdDelete className='text-[20px] text-red-500' />
-                                                    </div>
+                                                    <EditDeleteViewButtons setShow={setShow} />
                                                 </td>
 
 
@@ -101,7 +109,7 @@ const UsersList = () => {
                     }
 
 
-                    
+
 
                 </div>
 

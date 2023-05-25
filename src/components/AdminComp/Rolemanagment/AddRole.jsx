@@ -1,9 +1,21 @@
 import React from 'react'
 import { MdClose } from 'react-icons/md'
+import { useForm } from "react-hook-form";
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from "yup";
+
+const schema = yup.object({
+    role: yup.string().required(),
+});
 
 const AddRole = ({ setShow }) => {
 
-    // const Roles = [{}]
+    const { register, handleSubmit, formState: { errors } } = useForm({ mode: 'onChange', resolver: yupResolver(schema) });
+
+    const onSubmit = () => { }
+
+
+    const RolesName = ["Dashboard"," Customer Mangement","Contact detail","FAQ","Feature","Tax ","Referral"]
     return (
         <>
             <div className='xl:w-[750px] md:w-full w-[300px]'>
@@ -11,83 +23,97 @@ const AddRole = ({ setShow }) => {
                     <h2 className='text-[17px] text-[#7869DD] font-sans font-medium'>Add Role</h2>
                     <MdClose className='text-red-500 text-[20px] cursor-pointer' onClick={setShow} />
                 </div>
+                <form onSubmit={handleSubmit(onSubmit)}>
+                    <div className='pt-5'>
+                        <label className='text-[#222B45] text-[13px] font-bold'>Name *</label>
+                        <input  {...register('role')} type="text" placeholder='Role Name' className={`w-full border p-2 rounded-lg focus:outline-none ${errors?.role && 'border-red-500'}`} />
 
-                <div className='pt-5'>
-                    <label className='text-[#222B45] text-[13px] font-bold'>Name *</label>
-                    <select className='w-full border p-2 rounded-lg focus:outline-none'>
-                        <option>Select Role Type</option>
-                    </select>
-
-
-                    <div className=' mt-5'>
-                        <h2 className='text-[#222B45] text-[18px] font-bold pt-2 px-2'> Permission *</h2>
-                    </div>
-
-                    <div className='mt-5'>
-
-                        <div className="relative overflow-x-auto">
-                            <table className="w-full text-sm text-left ">
-                                <thead className="text-[#C2C2C2] text-[13px] border-b ">
-                                    <tr>
-                                        <th scope="col" className="px-6 py-3 tracking-[2px]">
-                                            User
-                                        </th>
-                                        <th scope="col" className="px-6 py-3 tracking-[2px]">
-                                            Role
-                                        </th>
-                                        <th scope="col" className="px-6 py-3 tracking-[2px]">
-                                            Permission
-                                        </th>
-                                        <th scope="col" className="px-6 py-3 tracking-[2px]">
-                                            Post
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {
-                                        Array(4).fill(4).map((_, i) => (
-                                            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                                    <div className='flex items-center'>
-                                                        <input type="checkbox" />
-                                                        <h2 className='text-[#222B45] px-2 text-[12px] font-semibold'>user List</h2>
-                                                    </div>
-                                                </th>
-                                                <td className="px-6 py-4">
-                                                    <div className='flex items-center'>
-                                                        <input type="checkbox" />
-                                                        <h2 className='text-[#222B45] px-2 text-[12px] font-semibold'>user List</h2>
-                                                    </div>
-                                                </td>
-                                                <td className="px-6 py-4">
-                                                    <div className='flex items-center'>
-                                                        <input type="checkbox" />
-                                                        <h2 className='text-[#222B45] px-2 text-[12px] font-semibold'>user List</h2>
-                                                    </div>
-                                                </td>
-                                                <td className="px-6 py-4">
-                                                    <div className='flex items-center'>
-                                                        <input type="checkbox" />
-                                                        <h2 className='text-[#222B45] px-2 text-[12px] font-semibold'>user List</h2>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        ))
-                                    }
+                        {errors.role && (
+                            <p className="text-red-500 text-sm ">{errors.role.message}</p>
+                        )}
 
 
-                                </tbody>
-                            </table>
+                        <div className=' mt-5'>
+                            <h2 className='text-[#222B45] text-[18px] font-bold pt-2 px-2'> Permission *</h2>
                         </div>
 
-                    </div>
+                        <div className='mt-5'>
 
-                    <div className='flex justify-end items-end mt-20'>
-                        <button className='flex items-center w-fit px-5 py-2 text-white text-[16px]   rounded-lg bg-gradient-to-r from-[#4965E0] to-[#896CDD] '>Add Role </button>
-                        <button className='flex items-center w-fit px-5 py-2  text-[16px]   rounded-lg text-[#896CDD] '>Cancel </button>
+                            <div className="relative overflow-x-auto">
+                                <table className="w-full text-sm text-left ">
+                                    <thead className="text-[#C2C2C2] text-[13px] border-b ">
+                                        <tr>
+                                            <th scope="col" className="px-6 py-3 tracking-[2px]">
+                                                ModuleName
+                                            </th>
+                                            <th scope="col" className="px-6 py-3 tracking-[2px]">
+                                                View
+                                            </th>
+                                            <th scope="col" className="px-6 py-3 tracking-[2px]">
+                                                Post
+                                            </th>
+                                            <th scope="col" className="px-6 py-3 tracking-[2px]">
+                                                Edit
+                                            </th>
+                                            <th scope="col" className="px-6 py-3 tracking-[2px]">
+                                                Delete
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {
+                                           RolesName.map((item, i) => (
+                                                <tr key={i} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                                   
+                                                    <td className="px-6 py-4">
+                                                        <div className='flex items-center'>
+                                                            
+                                                            <h2 className='text-[#222B45] px-2 text-[12px] font-semibold'>{item}</h2>
+                                                        </div>
+                                                    </td>
+                                                    <td className="px-6 py-4">
+                                                        <div className='flex items-center'>
+                                                            <input type="checkbox" />
+                                                            
+                                                        </div>
+                                                    </td>
+                                                    <td className="px-6 py-4">
+                                                        <div className='flex items-center'>
+                                                            <input type="checkbox" />
+                                                            
+                                                        </div>
+                                                    </td>
+                                                    <td className="px-6 py-4">
+                                                        <div className='flex items-center'>
+                                                            <input type="checkbox" />
+                                                            
+                                                        </div>
+                                                    </td>
+                                                    <td className="px-6 py-4">
+                                                        <div className='flex items-center'>
+                                                            <input type="checkbox" />
+                                                            
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            ))
+                                        }
 
+
+                                    </tbody>
+                                    
+                                </table>
+                            </div>
+
+                        </div>
+
+                        <div className='flex justify-end items-end mt-20'>
+                            <button type='submit' className='flex items-center w-fit px-5 py-2 text-white text-[16px]   rounded-lg bg-gradient-to-r from-[#4965E0] to-[#896CDD] '>Add Role </button>
+                            <button className='flex items-center w-fit px-5 py-2  text-[16px]   rounded-lg text-[#896CDD] ' type="button" onClick={setShow}>Cancel </button>
+
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
 
         </>
