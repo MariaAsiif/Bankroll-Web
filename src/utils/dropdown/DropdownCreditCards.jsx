@@ -1,8 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import Transition from '../Transition/Transition';
 import master from '../../assests/images/master.png'
-import { MdKeyboardArrowDown } from 'react-icons/md';
+import paypal from '../../assests/images/pay.png'
+import debit from '../../assests/images/ss.png'
+import { MdKeyboardArrowDown, MdKeyboardArrowRight } from 'react-icons/md';
 
 
 const DropdownCreditCard = ({ align }) => {
@@ -35,6 +36,8 @@ const DropdownCreditCard = ({ align }) => {
     document.addEventListener('keydown', keyHandler);
     return () => document.removeEventListener('keydown', keyHandler);
   });
+
+  const cards = [{pic:master , title:"master"},{pic:debit , title:"debit"},{pic:paypal , title:"paypal"}]
   return (
     <div className="relative inline-flex w-full">
       <button
@@ -47,8 +50,8 @@ const DropdownCreditCard = ({ align }) => {
         {/* <div className='bg-white shadow-md rounded-xl border border-gray-100 mt-3 p-5'> */}
 
         <div className='flex items-center'>
-          <img src={master} alt="master-card" className='object-cover' />
-          <h2 className='px-3 font-normal text-[16px]'>Debit</h2>
+          <img src={master} alt="master-card"  className={`object-cover`} />
+          <h2 className='px-3 font-normal text-[16px]'>master</h2>
         </div>
         <div className='flex  items-center'>
           <MdKeyboardArrowDown className='text-[#A5B4CB] text-[20px]' />
@@ -77,14 +80,14 @@ const DropdownCreditCard = ({ align }) => {
 
           <ul>
             {
-              Array(5).fill(5).map((_, i) => (
+              cards?.map((item, i) => (
                 <div  key={i} className='flex justify-between items-center p-2 border-b last:border-b-0'>
                   <div className='flex items-center'>
-                    <img src={master} alt="master-card" className='object-cover' />
-                    <h2 className='px-3 font-normal text-[16px]'>Debit</h2>
+                    <img src={item?.pic} alt="master-card" className={`object-cover ${item.pic === debit && 'w-[15%]'}`} />
+                    <h2 className='px-3 font-normal text-[16px]'>{item?.title}</h2>
                   </div>
                   <div className='flex  items-center'>
-                    <MdKeyboardArrowDown className='text-[#A5B4CB] text-[20px]' />
+                    <MdKeyboardArrowRight className='text-[#A5B4CB] text-[20px]' />
                   </div>
                 </div>
 
