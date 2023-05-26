@@ -57,7 +57,18 @@ const Dashboard = () => {
             {/* Money */}
             <div className='pt-5'>
               <h1 className='text-[22px] font-medium font-intr '>My Card</h1>
-              <DropdownCreditCard />
+              {/* <DropdownCreditCard /> */}
+              <div className='flex mt-2 justify-between items-center border rounded-lg p-3'>
+                <div className='flex items-center'>
+                  <img src={master} alt="master-card" className='object-cover' />
+                  <h2 className='px-3 font-normal text-[16px]'>Debit</h2>
+                </div>
+                <div className='flex  items-center'>
+                  <h2 className='text-[10px] font-roboto italic font-normal text-[#131635] px-2'><span className='text-[#A4B4CB] '>$</span>1080</h2>
+                  <MdKeyboardArrowDown className='text-[#A5B4CB] text-[20px]' />
+                </div>
+              </div>
+
               <div className='bg-white shadow-md rounded-xl border border-gray-100 mt-3 p-5'>
                 <div className='flex items-center'>
                   <img src={user} alt="master-card" className='object-cover' />
@@ -99,16 +110,9 @@ const Dashboard = () => {
             {/* Quick Transfer */}
             <div className='mt-10 p-5 border rounded-lg'>
               <h1 className='text-[22px] font-medium font-intr '>Quick  Transfer</h1>
-              <div className='flex mt-2 justify-between items-center border rounded-lg p-3'>
-                <div className='flex items-center'>
-                  <img src={master} alt="master-card" className='object-cover' />
-                  <h2 className='px-3 font-normal text-[16px]'>Debit</h2>
-                </div>
-                <div className='flex  items-center'>
-                  <h2 className='text-[10px] font-roboto italic font-normal text-[#131635] px-2'><span className='text-[#A4B4CB] '>$</span>1080</h2>
-                  <MdKeyboardArrowDown className='text-[#A5B4CB] text-[20px]' />
-                </div>
-              </div>
+
+              <DropdownCreditCard />
+
               <div className='bg-white shadow-md rounded-xl border border-gray-100 mt-3 py-3'>
                 <div className='flex items-center'>
 
@@ -125,7 +129,6 @@ const Dashboard = () => {
                   </div>
                 </div>
               </div>
-
               <div className='flex justify-between items-center mt-5'>
                 <div className='text-center'>
                   <img src={g1} alt="master-card" className='object-cover' />
