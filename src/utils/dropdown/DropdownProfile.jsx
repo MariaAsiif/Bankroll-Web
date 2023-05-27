@@ -38,7 +38,7 @@ const DropdownProfile = ({ align }) => {
     <div className="relative inline-flex">
       <button
         ref={trigger}
-        className="inline-flex bg-white shadow-md rounded-full p-2 justify-center items-center group"
+        className="inline-flex  rounded-full p-2 justify-center items-center group"
         aria-haspopup="true"
         onClick={() => setDropdownOpen(!dropdownOpen)}
         aria-expanded={dropdownOpen}
@@ -75,7 +75,7 @@ const DropdownProfile = ({ align }) => {
           <ul>
             <li>
               <Link
-                className="font-medium text-sm text-[#444444]-500 hover:text-red-600 flex items-center py-1 px-3"
+                className="font-medium text-sm text-[#444444]-500 hover:text-[#4965E0] flex items-center py-1 px-3"
                 to="/profile"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
@@ -84,7 +84,7 @@ const DropdownProfile = ({ align }) => {
             </li>
             <li>
               <Link
-                className="font-medium text-sm text-[#444444]-500 hover:text-red-600 flex items-center py-1 px-3"
+                className="font-medium text-sm text-[#444444]-500 hover:text-[#4965E0] flex items-center py-1 px-3"
                 to="/profile"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
@@ -93,7 +93,7 @@ const DropdownProfile = ({ align }) => {
             </li>
             <li>
               <span
-                className="font-medium cursor-pointer text-sm text-[#444444]-500 hover:text-red-600 flex items-center py-1 px-3"
+                className="font-medium cursor-pointer text-sm text-[#444444]-500 hover:text-[#4965E0] flex items-center py-1 px-3"
 
               // onClick={handleSignout}
               >

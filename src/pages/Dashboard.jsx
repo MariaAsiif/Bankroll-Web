@@ -115,7 +115,6 @@ const Dashboard = () => {
 
               <div className='bg-white shadow-md rounded-xl border border-gray-100 mt-3 py-3'>
                 <div className='flex items-center'>
-
                   <input type="text" placeholder='Enter the amount ' className='focus:outline-none italic text-[10px] border-0 mx-3' />
                 </div>
                 <div className='flex justify-between items-center pt-2'>
@@ -183,21 +182,21 @@ const Dashboard = () => {
                 </div>
               </div>
               <div className=''>
-                <div className='flex justify-between items-center'>
-                  <div>
+                <div className='flex justify-between '>
+                  <div className='w-full'>
                     <h2 className='text-[22px] font-medium font-intr'>Recent Contacts</h2>
+                    <p className='text-[#7D8DA6] text-[11px]'>18 recipients</p>
+                  </div>
+                  <div className='flex items-center justify-end w-[80%] -mt-[13px]'>
+                    {/* <MdEdit className='mx-2 text-[#1E1F20]' /> */}
                     {search ?
                       <div className='flex items-center'>
-                        <input type="text" placeholder='type here' className='border-0 focus:outline-none placeholder:text-[14px]' />
+                        <input type="text" placeholder='type here' className='border-0 focus:outline-none placeholder:text-[14px] w-[80%]' />
                         <MdClose onClick={() => setSearch(false)} className='cursor-pointer' />
                       </div>
                       :
-                      <p className='text-[#7D8DA6] text-[11px]'>18 recipients</p>
+                      <BsSearch onClick={() => setSearch(true)} className='cursor-pointer' />
                     }
-                  </div>
-                  <div className='flex items-center'>
-                    <MdEdit className='mx-2 text-[#1E1F20]' />
-                    <BsSearch onClick={() => setSearch(true)} className='cursor-pointer' />
                   </div>
                 </div>
                 <div className='mt-5'>

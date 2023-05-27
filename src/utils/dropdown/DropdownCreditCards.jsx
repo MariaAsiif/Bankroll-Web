@@ -3,7 +3,7 @@ import Transition from '../Transition/Transition';
 import master from '../../assests/images/master.png'
 import paypal from '../../assests/images/pay.png'
 import debit from '../../assests/images/ss.png'
-import { MdKeyboardArrowDown, MdKeyboardArrowRight } from 'react-icons/md';
+import { MdKeyboardArrowDown } from 'react-icons/md';
 
 
 const DropdownCreditCard = ({ align }) => {
@@ -86,9 +86,7 @@ const DropdownCreditCard = ({ align }) => {
                     <img src={item?.pic} alt="master-card" className={`object-cover ${item.pic === debit && 'w-[15%]'}`} />
                     <h2 className='px-3 font-normal text-[16px]'>{item?.title}</h2>
                   </div>
-                  <div className='flex  items-center'>
-                    <MdKeyboardArrowRight className='text-[#A5B4CB] text-[20px]' />
-                  </div>
+                 
                 </div>
 
               ))

@@ -58,7 +58,7 @@ const UserList = () => {
                                 <tbody className="text-sm ">
                                     {
                                         items.map((_, i) =>
-                                            <tr className=' cursor-pointer  ' >
+                                            <tr key={i} className=' cursor-pointer  ' >
                                                 <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap pr-5">
                                                     <input type="checkbox" />
                                                 </td>

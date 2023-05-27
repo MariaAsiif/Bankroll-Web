@@ -16,35 +16,54 @@ const schema = yup.object({
     c_password: yup.string().required(),
 });
 
-const AddUser = ({ type, setShow }) => {
+const AddUsers = ({ type, setShow }) => {
 
     const { register, handleSubmit, formState: { errors } } = useForm({ mode: 'onChange', resolver: yupResolver(schema) });
 
 
     const onSubmit = () => { }
 
+
     return (
         <>
             <div className='xl:w-[750px] '>
                 <div className='flex justify-between items-center border-b pb-2 '>
-                    <h2 className='text-[17px] text-[#7869DD] font-sans font-medium'>{type === "view" ? 'View User' : type === "edit" ? "Edit User" : "Add User"}</h2>
+                    <h2 className='text-[17px] text-[#7869DD] font-sans font-medium'>{type === "view" ? 'View Users' : type === "edit" ? "Edit Users" : "Add Users"}</h2>
                     <MdClose className='text-red-500 text-[20px] cursor-pointer' onClick={setShow} />
                 </div>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className='pt-5'>
-                        {
-                            type === "view" ?
-                                <h2>User Id</h2>
-                                :
+                        <div>
+                            {
+                                type !== "view" &&
+
                                 <>
                                     <input type="text" {...register('user_id')} placeholder='User ID *' className={`w-full border p-2 rounded-lg focus:outline-none ${errors?.user_id && 'border-red-500'}`} />
                                     {errors.user_id && (
                                         <p className="text-red-500 text-sm ">{errors.user_id.message}</p>
                                     )}
                                 </>
-                        }
+                            }
+                        </div>
+
                         <div className={`grid ${type === "view" ? 'xl:grid-cols-3' : 'xl:grid-cols-2'}  md:grid-cols-2 xl:gap-10 md:gap-10 gap-3 xl:pt-5 pt-3`}>
                             <div>
+
+                                {
+                                    type == "view" ?
+                                        <h2>User Id</h2>
+                                        :
+                                        <>
+                                            <input type="text" {...register('user_id')} placeholder='User ID *' className={`w-full border p-2 rounded-lg focus:outline-none ${errors?.user_id && 'border-red-500'}`} />
+                                            {errors.user_id && (
+                                                <p className="text-red-500 text-sm ">{errors.user_id.message}</p>
+                                            )}
+                                        </>
+                                }
+                            </div>
+                            <div>
+
+
                                 {
                                     type === "view" ?
                                         <h2>First Name</h2>
@@ -70,11 +89,7 @@ const AddUser = ({ type, setShow }) => {
                                         </>
                                 }
                             </div>
-                            {type === "view" &&
-                                <div>
 
-                                </div>
-                            }
                         </div>
                         <div className='grid xl:grid-cols-3 md:grid-cols-3  gap-3 xl:pt-5  pt-3'>
                             <div>
@@ -106,7 +121,7 @@ const AddUser = ({ type, setShow }) => {
                             <div>
                                 {
                                     type === "view" ?
-                                        <h2 >Role</h2>
+                                        <h2 className='pl-4'>Role</h2>
                                         :
                                         <>
                                             <select {...register('role')} className={`w-full border p-2 rounded-lg focus:outline-none ${errors?.role && 'border-red-500'}`}>
@@ -127,7 +142,7 @@ const AddUser = ({ type, setShow }) => {
                             <div>
                                 {
                                     type === "view" ?
-                                        <h2>UserName</h2>
+                                        <h2 >UserName</h2>
                                         :
                                         <>
                                             <input type="text"  {...register('username')} placeholder='Username *' className={`w-full border p-2 rounded-lg focus:outline-none ${errors?.username && 'border-red-500'}`} />
@@ -153,7 +168,7 @@ const AddUser = ({ type, setShow }) => {
                             <div>
                                 {
                                     type === "view" ?
-                                        <h2>Confirm Password</h2>
+                                        <h2  className='pl-4'>Confirm Password</h2>
                                         :
                                         <>
                                             <input type="password" {...register('c_password')} placeholder='Confirm Password *' className={`w-full border p-2 rounded-lg focus:outline-none ${errors?.user_id && 'border-red-500'}`} />
@@ -213,4 +228,4 @@ const AddUser = ({ type, setShow }) => {
     )
 }
 
-export default AddUser
+export default AddUsers

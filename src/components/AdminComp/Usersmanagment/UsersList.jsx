@@ -1,14 +1,14 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import EditDeleteViewButtons from '../../GenericComp/EditDeleteViewButtons';
 import Popup from '../../../utils/popup/Popup'
-// import DeletePopup from '../../GenericComp/DeletePopup'
-// import AddUser from './AddUser'
+import DeletePopup from '../../GenericComp/DeletePopup'
+import AddUsers from './AddUsers'
 const UsersList = () => {
     const items = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
-    const [popuptype , setPopuptype] = useState("")
-    const [show , setShow] = useState(false)
+    const [popuptype, setPopuptype] = useState("")
+    const [show, setShow] = useState(false)
 
-    const handleClick = (type)=> {
+    const handleClick = (type) => {
         setShow(true)
         setPopuptype(type)
     }
@@ -18,7 +18,7 @@ const UsersList = () => {
     return (
         <>
 
-        {/* { show && <Popup modalOpen={show} onClose={() => setShow(false)} data={type} /> }  */}
+            {show && <Popup modalOpen={show} onClose={() => setShow(false)} data={popuptype === "delete" ? <DeletePopup permition={popuptype} Toggle={setShow} /> : <AddUsers type={popuptype} setShow={() => setShow(false)} />} />}
             <div className=' bg-white rounded-md shadow-md border '>
                 <div className="overflow-x-auto  mt-6">
                     {
@@ -87,7 +87,7 @@ const UsersList = () => {
                                                 </td>
 
                                                 <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                                    <EditDeleteViewButtons setShow={setShow} />
+                                                    <EditDeleteViewButtons handleClick={handleClick} />
                                                 </td>
 
 
