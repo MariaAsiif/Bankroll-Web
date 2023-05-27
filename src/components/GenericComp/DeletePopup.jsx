@@ -23,8 +23,8 @@ const DeletePopup = ({permition, Toggle}) => {
                     <h1 className='text-[30px] font-bold'> Are You Sure! </h1>
                     <p className='text-[15px] font-samibold mt-2'> Your want to delete this. </p>
                     <div className='flex flex-col mt-5'>
-                        <button onClick={() => handleClose("yes")} className='bg-blue-500 w-[100%] p-3  text-white'>Yes </button>
-                        <button onClick={() => handleClose("no")} className='bg-red-500 p-3 mt-3 text-white'>No</button>
+                        <button onClick={() => handleClose("yes")} className='bg-gradient-to-r from-[#4965E0] to-[#896CDD] w-[100%] p-3  text-white'>Yes </button>
+                        <button onClick={() => handleClose("no")} className=' bg-transparent text-[#4965E0] p-3 mt-3 border-[#4965E0] border'>No</button>
                     </div>
                 </div>
             </Modal>

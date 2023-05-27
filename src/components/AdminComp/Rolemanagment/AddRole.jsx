@@ -8,30 +8,41 @@ const schema = yup.object({
     role: yup.string().required(),
 });
 
-const AddRole = ({ setShow }) => {
+const AddRole = ({ setShow, type }) => {
 
     const { register, handleSubmit, formState: { errors } } = useForm({ mode: 'onChange', resolver: yupResolver(schema) });
 
+
     const onSubmit = () => { }
+    const RolesName = ["Dashboard", " Customer Mangement", "Contact detail", "FAQ", "Feature", "Tax ", "Referral"]
 
 
-    const RolesName = ["Dashboard"," Customer Mangement","Contact detail","FAQ","Feature","Tax ","Referral"]
+  
+
+     
+
     return (
         <>
+        
             <div className='xl:w-[750px] md:w-full w-[300px]'>
                 <div className='flex justify-between items-center border-b pb-2 '>
-                    <h2 className='text-[17px] text-[#7869DD] font-sans font-medium'>Add Role</h2>
+                    <h2 className='text-[17px] text-[#7869DD] font-sans font-medium'>{type === "view" ? 'View Roles' : type === "edit" ? "Edit Roles" : "Add Role"}</h2>
                     <MdClose className='text-red-500 text-[20px] cursor-pointer' onClick={setShow} />
                 </div>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className='pt-5'>
                         <label className='text-[#222B45] text-[13px] font-bold'>Name *</label>
-                        <input  {...register('role')} type="text" placeholder='Role Name' className={`w-full border p-2 rounded-lg focus:outline-none ${errors?.role && 'border-red-500'}`} />
-
-                        {errors.role && (
-                            <p className="text-red-500 text-sm ">{errors.role.message}</p>
-                        )}
-
+                        {
+                            type === "view" ?
+                                <h2>Role Name</h2>
+                                :
+                                <>
+                                    <input  {...register('role')} type="text" placeholder='Role Name' className={`w-full border p-2 rounded-lg focus:outline-none ${errors?.role && 'border-red-500'}`} />
+                                    {errors.role && (
+                                        <p className="text-red-500 text-sm ">{errors.role.message}</p>
+                                    )}
+                                </>
+                        }
 
                         <div className=' mt-5'>
                             <h2 className='text-[#222B45] text-[18px] font-bold pt-2 px-2'> Permission *</h2>
@@ -62,37 +73,37 @@ const AddRole = ({ setShow }) => {
                                     </thead>
                                     <tbody>
                                         {
-                                           RolesName.map((item, i) => (
+                                            RolesName.map((item, i) => (
                                                 <tr key={i} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                                   
+
                                                     <td className="px-6 py-4">
                                                         <div className='flex items-center'>
-                                                            
+
                                                             <h2 className='text-[#222B45] px-2 text-[12px] font-semibold'>{item}</h2>
                                                         </div>
                                                     </td>
                                                     <td className="px-6 py-4">
                                                         <div className='flex items-center'>
-                                                            <input type="checkbox" />
-                                                            
+                                                            <input type="checkbox" checked={type === "view" ? true :false } />
+
                                                         </div>
                                                     </td>
                                                     <td className="px-6 py-4">
                                                         <div className='flex items-center'>
-                                                            <input type="checkbox" />
-                                                            
+                                                            <input type="checkbox" checked={type === "view" ? true :false } />
+
                                                         </div>
                                                     </td>
                                                     <td className="px-6 py-4">
                                                         <div className='flex items-center'>
-                                                            <input type="checkbox" />
-                                                            
+                                                            <input type="checkbox" checked={type === "view" ? true :false } />
+
                                                         </div>
                                                     </td>
                                                     <td className="px-6 py-4">
                                                         <div className='flex items-center'>
-                                                            <input type="checkbox" />
-                                                            
+                                                            <input type="checkbox" checked={type === "view" ? true :false } />
+
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -101,7 +112,7 @@ const AddRole = ({ setShow }) => {
 
 
                                     </tbody>
-                                    
+
                                 </table>
                             </div>
 
