@@ -1,5 +1,6 @@
 import AdminLayout from '../components/Layout/AdminLayout/AdminLayout';
 import AuditLogs from '../pages/AuditLog';
+import CardCenter from '../pages/CardCenter';
 import Contact from '../pages/Contact';
 import Dashboard from '../pages/Dashboard';
 import Faq from '../pages/Faq';
@@ -38,6 +39,7 @@ const router = createBrowserRouter(
         <Route path="/usermanagment/users" element={<Users />} />
         <Route path="/usermanagment/audit" element={<AuditLogs />} />
         <Route path="/faqs" element={<Faqs />} />
+        <Route path="/cardCenter" element={<CardCenter />} />
 
       </Route>
     </>

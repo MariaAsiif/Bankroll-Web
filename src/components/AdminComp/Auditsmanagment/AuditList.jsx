@@ -1,6 +1,7 @@
 import React from 'react'
 import { BsEye } from 'react-icons/bs';
 import { MdDelete, MdEdit } from 'react-icons/md';
+import fileImg  from '../../../assests/images/Icon.png'
 const AuditList = () => {
     const items = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
 
@@ -28,12 +29,12 @@ const AuditList = () => {
                                 <tbody className="text-sm ">
                                     {
                                         items.map((_, i) =>
-                                            <tr className=' cursor-pointer  ' >
+                                            <tr className=' cursor-pointer  ' key={i} >
                                                 <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap pr-5">
                                                     <input type="checkbox" />
                                                 </td>
                                                 <td className="px-2 first:pl-5 flex items-center last:pr-5 py-3 whitespace-nowrap">
-                                                    <div className="text-left text-[14px] text-[#898989] px-1">1234</div>
+                                                    <img src={fileImg} alt="data" className='object-cover'/>
                                                 </td>
                                                 <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                                     <div className=" flex-col text-[14px] text-[#898989] px-1">
