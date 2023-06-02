@@ -9,6 +9,7 @@ import Feature from '../pages/Feature';
 import Landing from '../pages/Landing';
 import Login from '../pages/Login';
 import RoleManagement from '../pages/Role';
+import SignUp from '../pages/SignUp';
 import UserManagement from '../pages/UserManagement';
 import Users from '../pages/Users';
 import './App.css';
@@ -27,6 +28,7 @@ const router = createBrowserRouter(
       <Route path="/">
         <Route index element={<Landing />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
         <Route path="/feature" element={<Feature />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/contactUs" element={<Contact />} />
