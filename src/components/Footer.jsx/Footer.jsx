@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       <div className={` border border-white relative ${location === "/" && 'lg:mt-[10rem]'} mt-4`}>
-        <div className='bg-gradient-to-r mt-[5rem]  from-[#DBE7FA] to-[#F2F6FD] lg:h-[380px] h-full '>
+        <div className='bg-gradient-to-r xl:mt-[27rem] mt-[23rem]  from-[#DBE7FA] to-[#F2F6FD] lg:h-[380px] h-full '>
           <div className='lg:mx-20 mx-6'>
             <div className='grid lg:grid-cols-4 md:grid-cols-2   grid-cols-1  pt-[10rem] pb-3'>
               <div>
@@ -60,8 +60,19 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className=' lg:mx-20 mx-5 md:w-[95%]  lg:w-[86%] w-[90%] absolute top-0 '>
-          <div className=' bg-white shadow-2xl border border-gray-50 rounded-[40px] lg:p-8 p-4 pt-[4rem] lg:h-[200px]' >
+        <div className=' lg:mx-20 mx-5 md:w-[95%] xl:left-10  lg:w-[80%]  absolute top-0 '>
+          <div className='bg-[#221F30] flex flex-col justify-center items-center   h-full pt-20 pb-32'>
+            <h1 className='text-center text-white xl:text-[75px] text-[40px] '>Get Started
+              <br />
+              <span className='text-[#4965E0]'>with BankRoll</span></h1>
+
+            <p className='text-[18px] max-w-[380px] text-white text-center m-auto'>Open an account in minutes - no credit check
+              and no minimum deposit.</p>
+
+            <button className='rounded-full mt-8 text-[18px] text-white font-roboto px-8 py-2 hover:bg-transparent  hover:border-[#896CDD] border-[#896CDD] border-2 bg-[#896CDD] hover:text-[#896CDD]'>Open Account</button>
+
+          </div>
+          {/* <div className=' bg-white shadow-2xl border border-gray-50 rounded-[40px] lg:p-8 p-4 pt-[4rem] lg:h-[200px]' >
             <div className='flex lg:justify-between md:justify-between lg:flex-row   md:flex-row flex-col lg:px-7 px-0 items-center'>
               <div>
                 <h2 className='text-[#060C3A] lg:text-[40px] text-[20px]'>
@@ -76,7 +87,7 @@ const Footer = () => {
               </div>
               <button className='rounded-full  text-white font-roboto px-8 py-3 hover:bg-transparent  hover:border-[#896CDD] border-[#896CDD] border-2 bg-[#896CDD] hover:text-[#896CDD]'>SignUp now</button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

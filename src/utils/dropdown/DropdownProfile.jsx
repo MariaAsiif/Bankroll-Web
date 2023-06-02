@@ -92,13 +92,13 @@ const DropdownProfile = ({ align }) => {
               </Link>
             </li>
             <li>
-              <span
+              <Link to="/login"
                 className="font-medium cursor-pointer text-sm text-[#444444]-500 hover:text-[#4965E0] flex items-center py-1 px-3"
 
               // onClick={handleSignout}
               >
                 Sign Out
-              </span>
+              </Link>
             </li>
           </ul>
         </div>

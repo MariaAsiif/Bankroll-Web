@@ -10,7 +10,7 @@ const Faqs = () => {
     return (
         <>
           <Popup modalOpen={show} data={<AddFaqs setShow={() => setShow(false)} />} onClose={() => setShow(false)} />
-            <FilterSection setShow={setShow} title={"Audit FAQ's"} buttonTitle={"Add New FAQ's"}/>
+            <FilterSection setShow={setShow} title={"FAQ's"} buttonTitle={"Add New FAQ's"}/>
             <div className='mt-10'>
                 <FaqsList />
             </div>
