@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import loginImg from '../assests/images/login.png'
 import loginImg2 from '../assests/images/login2.png'
 import circle1 from '../assests/images/circle1.png'
-import circle2 from '../assests/images/cirlce2.png'
+// import circle2 from '../assests/images/cirlce2.png'
 import logo from '../assests/images/Logo.png'
 import facebook from '../assests/images/FA.png'
 import google from '../assests/images/GOG.png'
@@ -10,7 +10,7 @@ import apple from '../assests/images/Fit.png'
 import { BsEye, BsEyeSlash } from 'react-icons/bs'
 import { LoadingSpinner } from '../utils/LoaderSpinner'
 import { Link, useNavigate } from 'react-router-dom'
-const Login = () => {
+const SignUp = () => {
   const [showPass, setShowPass] = useState(false)
   const [loading, setLoading] = useState(false)
   const navigate = useNavigate()
@@ -40,6 +40,7 @@ const Login = () => {
               </div>
               <div className='pt-5'>
                 <input type="text" className='border rounded-md h-[45px] px-3 focus:outline-none w-full placeholder:text-[#C2C2C2]  ' placeholder='UserName' />
+                <input type="email" className='border rounded-md h-[45px] px-3 mt-4 focus:outline-none w-full placeholder:text-[#C2C2C2]  ' placeholder='Email' />
                 <div className='flex mt-4 justify-between items-center border rounded-md h-[45px]'>
                   <input type={showPass ? 'text' : 'password'} className=' px-3 focus:outline-none w-full placeholder:text-[#C2C2C2]' placeholder='Password' />
                   <div className='mx-2 '>
@@ -51,18 +52,9 @@ const Login = () => {
                   </div>
 
                 </div>
-                <div className='pt-3 flex items-center justify-between'>
-                  <div className='flex items-center'>
-                    <input type="checkbox" className='w-[20px] h-[17px]' />
-                    <h2 className='text-[#C2C2C2] text-[14px] mx-1 font-normal'>Keep me loged in</h2>
-                  </div>
-                  <div>
-                    <h2 className='text-[#7869DD] font-normal text-[16px]'>Forgot Password</h2>
-                  </div>
-                </div>
 
                 <div className='pt-4'>
-                  <button onClick={() => setLoading(true)} className='bg-gradient-to-r text-[16px] font-normal from-[#4965E0] to-[#896CDD] text-white rounded-md w-fit px-10 py-2.5'>Login</button>
+                  <button onClick={() => setLoading(true)} className='bg-gradient-to-r text-[16px] font-normal from-[#4965E0] to-[#896CDD] text-white rounded-md w-fit px-10 py-2.5'>Sign Up</button>
                 </div>
 
                 <div className='pt-4 flex items-center justify-center'>
@@ -72,7 +64,7 @@ const Login = () => {
                 </div>
 
                 <div className='pt-5 flex justify-center items-center'>
-                  <Link to="/signup" className='text-[16px] text-[#B5BBC2] font-normal'>Don't have Account? <span className='text-[#7869DD] '>Create Account!</span></Link>
+                  <Link to="/login" className='text-[16px] text-[#B5BBC2] font-normal'>Don have Account? <span className='text-[#7869DD] '>Sign In!</span></Link>
                 </div>
               </div>
             </div>
@@ -91,4 +83,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default SignUp
